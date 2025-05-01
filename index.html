@@ -139,14 +139,18 @@
           e-res;
       }
 
+      /* Pindahkan header Google Translate ke bawah navbar */
+      .goog-te-banner-frame {
+        position: fixed;
+        top: 80px !important; /* Sesuaikan dengan tinggi navbar Anda */
+        left: 0;
+        z-index: 999; /* Pastikan di bawah navbar (z-index navbar biasanya 1000+) */
+        width: 100%;
+        margin-top: 0;
+      }
       /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
       .goog-te-banner-frame.skiptranslate {
         display: none !important;
-      }
-
-      body {
-        top: 0px !important;
-        position: static !important;
       }
 
       /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
@@ -175,7 +179,7 @@
 
   <body>
     <!-- Header -->
-    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+    <header id="navbar" class="fixed w-full top-20 left-0 z-50">
       <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
         <div>
           <a href="index.html">
@@ -466,33 +470,64 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector("#navbar").offsetHeight;
+
+        // Atur posisi header translate
+        const adjustTranslateHeader = () => {
+          const banner = document.querySelector(".goog-te-banner-frame");
+          if (banner) {
+            banner.style.top = `${navbarHeight}px`;
+            banner.style.position = "fixed";
+          }
+        };
+
+        // Jalankan pertama kali
+        adjustTranslateHeader();
+
+        // Pantau perubahan (jika header muncul belakangan)
+        setInterval(adjustTranslateHeader, 500);
+      });
+    </script>
+
+    <script>
+      // Fungsi modifikasi untuk BLOCK header Google Translate
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           {
             pageLanguage: "en",
             includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
-            autoDisplay: false, // Jangan tampilkan widget langsung
+            autoDisplay: false,
+            disableTracking: true, // Tambahkan ini
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
           },
           "google_translate_element"
         );
+
+        // BLOCK HEADER secara paksa dengan interval
+        const stopBanner = setInterval(() => {
+          if (!document.querySelector(".goog-te-banner-frame")) return;
+
+          // 1. Sembunyikan banner
+          document.querySelector(".goog-te-banner-frame").style.display = "none";
+
+          // 2. Hapus class 'translated-ltr' dari body
+          document.body.classList.remove("translated-ltr");
+
+          // 3. Stop interval setelah berhasil
+          clearInterval(stopBanner);
+        }, 50);
       }
+
+      // Blokir event show banner
+      document.addEventListener("DOMContentLoaded", () => {
+        document.cookie = "googtrans=/en/en; path=/; expires=Thu, 01 Jan 2099 00:00:00 UTC";
+      });
+
+      document.querySelector(".skiptranslate")?.remove();
     </script>
 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-      document.getElementById("langSelect").addEventListener("change", function () {
-        const lang = this.value;
-        if (!lang) return;
-
-        const select = document.querySelector(".goog-te-combo");
-        if (select) {
-          select.value = lang;
-          select.dispatchEvent(new Event("change"));
-        }
-      });
-    </script>
 
     <!-- AOS -->
     <script>

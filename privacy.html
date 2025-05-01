@@ -38,12 +38,48 @@
       #portfolio-modal.show .relative {
         transform: scale(1);
       }
+
+      /* Pindahkan header Google Translate ke bawah navbar */
+      .goog-te-banner-frame {
+        position: fixed;
+        top: 80px !important; /* Sesuaikan dengan tinggi navbar Anda */
+        left: 0;
+        z-index: 999; /* Pastikan di bawah navbar (z-index navbar biasanya 1000+) */
+        width: 100%;
+        margin-top: 0;
+      }
+      /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+
+      /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
+      .goog-logo-link,
+      .goog-te-gadget span {
+        display: none !important;
+      }
+
+      /* HAPUS RUANG TAMBAHAN DARI GOOGLE */
+      .goog-te-banner-frame {
+        height: 0 !important;
+        visibility: hidden !important;
+      }
+
+      #goog-gt-tt,
+      .goog-te-balloon-frame {
+        display: none !important;
+      }
+
+      .goog-text-highlight {
+        background: none !important;
+        box-shadow: none !important;
+      }
     </style>
   </head>
 
   <body>
     <!-- Header -->
-    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+    <header id="navbar" class="fixed w-full top-20 left-0 z-50">
       <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
         <div>
           <a href="index.html">
@@ -64,6 +100,24 @@
             </li>
             <li>
               <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#FF8539'" onmouseout="this.style.color='white'">How it Works</a>
+            </li>
+            <li>
+              <div class="relative inline-block text-left">
+                <!-- <select id="langSelect" class="bg-black border border-gray-300 text-sm rounded p-2">
+                  <option value="">Select Language</option>
+                  <option value="es">Spanyol</option>
+                  <option value="pt">Portugis (Brasil)</option>
+                  <option value="de">Jerman</option>
+                  <option value="fr">Prancis</option>
+                  <option value="ja">Jepang</option>
+                  <option value="ru">Rusia</option>
+                  <option value="tr">Turki</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="ko">Korea</option>
+                  <option value="tl">Filipina</option>
+                </select> -->
+                <div id="google_translate_element"></div>
+              </div>
             </li>
             <li>
               <a href="index.html#formApp" class="nav-link">
@@ -257,5 +311,65 @@
         delay: 100,
       });
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector("#navbar").offsetHeight;
+
+        // Atur posisi header translate
+        const adjustTranslateHeader = () => {
+          const banner = document.querySelector(".goog-te-banner-frame");
+          if (banner) {
+            banner.style.top = `${navbarHeight}px`;
+            banner.style.position = "fixed";
+          }
+        };
+
+        // Jalankan pertama kali
+        adjustTranslateHeader();
+
+        // Pantau perubahan (jika header muncul belakangan)
+        setInterval(adjustTranslateHeader, 500);
+      });
+    </script>
+
+    <script>
+      // Fungsi modifikasi untuk BLOCK header Google Translate
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
+            autoDisplay: false,
+            disableTracking: true, // Tambahkan ini
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+
+        // BLOCK HEADER secara paksa dengan interval
+        const stopBanner = setInterval(() => {
+          if (!document.querySelector(".goog-te-banner-frame")) return;
+
+          // 1. Sembunyikan banner
+          document.querySelector(".goog-te-banner-frame").style.display = "none";
+
+          // 2. Hapus class 'translated-ltr' dari body
+          document.body.classList.remove("translated-ltr");
+
+          // 3. Stop interval setelah berhasil
+          clearInterval(stopBanner);
+        }, 50);
+      }
+
+      // Blokir event show banner
+      document.addEventListener("DOMContentLoaded", () => {
+        document.cookie = "googtrans=/en/en; path=/; expires=Thu, 01 Jan 2099 00:00:00 UTC";
+      });
+
+      document.querySelector(".skiptranslate")?.remove();
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
