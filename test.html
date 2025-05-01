@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Google Translate Tanpa Header</title>
+    <style>
+      /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+
+      body {
+        top: 0px !important;
+        position: static !important;
+      }
+
+      /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
+      .goog-logo-link,
+      .goog-te-gadget span {
+        display: none !important;
+      }
+
+      /* HAPUS RUANG TAMBAHAN DARI GOOGLE */
+      .goog-te-banner-frame {
+        height: 0 !important;
+        visibility: hidden !important;
+      }
+
+      #goog-gt-tt,
+      .goog-te-balloon-frame {
+        display: none !important;
+      }
+
+      .goog-text-highlight {
+        background: none !important;
+        box-shadow: none !important;
+      }
+    </style>
+
+    <!-- Panggil Google Translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "id",
+            includedLanguages: "es,pt,fr,de,ja,ru,tr,id,ko,tl",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </head>
+  <body class="p-6">
+    <!-- Dropdown Pilihan Bahasa -->
+    <div id="google_translate_element" class="mb-4"></div>
+
+    <h1 class="text-3xl font-bold">Selamat datang!</h1>
+    <p class="mt-2">Ini adalah teks yang akan otomatis diterjemahkan ke bahasa pilihan Anda.</p>
+  </body>
+
+  <script>
+    function hideGoogleTranslateHeader() {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .goog-te-banner-frame {
+          display: none !important;
+        }
+        body {
+          top: 0px !important;
+        }
+      `;
+      document.head.appendChild(style);
+
+      // Jalankan ulang setiap 500ms agar tetap tersembunyi
+      setInterval(() => {
+        const gtFrame = document.querySelector(".goog-te-banner-frame");
+        if (gtFrame) {
+          gtFrame.style.display = "none";
+        }
+        document.body.style.top = "0px";
+      }, 500);
+    }
+
+    // Tunggu sampai Google Translate termuat
+    window.addEventListener("load", hideGoogleTranslateHeader);
+  </script>
+</html>

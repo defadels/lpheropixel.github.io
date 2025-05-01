@@ -138,6 +138,38 @@
             12 12,
           e-res;
       }
+
+      /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+
+      body {
+        top: 0px !important;
+        position: static !important;
+      }
+
+      /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
+      .goog-logo-link,
+      .goog-te-gadget span {
+        display: none !important;
+      }
+
+      /* HAPUS RUANG TAMBAHAN DARI GOOGLE */
+      .goog-te-banner-frame {
+        height: 0 !important;
+        visibility: hidden !important;
+      }
+
+      #goog-gt-tt,
+      .goog-te-balloon-frame {
+        display: none !important;
+      }
+
+      .goog-text-highlight {
+        background: none !important;
+        box-shadow: none !important;
+      }
     </style>
   </head>
 
@@ -164,6 +196,24 @@
             </li>
             <li>
               <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#FF8539'" onmouseout="this.style.color='white'">How it Works</a>
+            </li>
+            <li>
+              <div class="relative inline-block text-left">
+                <!-- <select id="langSelect" class="bg-black border border-gray-300 text-sm rounded p-2">
+                  <option value="">Select Language</option>
+                  <option value="es">Spanyol</option>
+                  <option value="pt">Portugis (Brasil)</option>
+                  <option value="de">Jerman</option>
+                  <option value="fr">Prancis</option>
+                  <option value="ja">Jepang</option>
+                  <option value="ru">Rusia</option>
+                  <option value="tr">Turki</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="ko">Korea</option>
+                  <option value="tl">Filipina</option>
+                </select> -->
+                <div id="google_translate_element"></div>
+              </div>
             </li>
             <li>
               <a href="index.html#formApp" class="nav-link">
@@ -414,6 +464,35 @@
 
     <!-- Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
+            autoDisplay: false, // Jangan tampilkan widget langsung
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+      document.getElementById("langSelect").addEventListener("change", function () {
+        const lang = this.value;
+        if (!lang) return;
+
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = lang;
+          select.dispatchEvent(new Event("change"));
+        }
+      });
+    </script>
 
     <!-- AOS -->
     <script>
