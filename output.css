@@ -2203,6 +2203,16 @@ video {
   border-color: rgb(72 72 72 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\#ff6100\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 98 0 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#d44500\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 98 0 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
