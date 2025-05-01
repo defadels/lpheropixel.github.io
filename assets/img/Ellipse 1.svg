@@ -21,9 +21,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.40827147"
-     inkscape:cx="169.00519"
-     inkscape:cy="542.53117"
+     inkscape:zoom="1.1547661"
+     inkscape:cx="374.10173"
+     inkscape:cy="405.70986"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -53,7 +53,8 @@
          offset="1"
          stop-color="#1C4C00"
          stop-opacity="0"
-         id="stop6" />
+         id="stop6"
+         style="stop-color:#4c1900;stop-opacity:0" />
     </radialGradient>
   </defs>
 </svg>
