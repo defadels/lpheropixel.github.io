@@ -3456,6 +3456,11 @@ p {
   border-color: rgb(55 150 0 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-\[\#d44500\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 85 0 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-\[\#3b6b1f\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 107 31 / var(--tw-bg-opacity, 1));
