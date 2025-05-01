@@ -174,6 +174,28 @@
         background: none !important;
         box-shadow: none !important;
       }
+
+      /* Animasi dropdown */
+      #language-dropdown {
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+
+      /* Animasi saat muncul */
+      #language-dropdown:not(.hidden) {
+        animation: fadeIn 0.3s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
 
@@ -181,12 +203,91 @@
     <!-- Header -->
     <header id="navbar" class="fixed w-full top-20 left-0 z-50">
       <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
-        <div>
+        <div class="flex items-center gap-4">
           <a href="index.html">
-            <img src="assets/img/logo.png" alt="" class="w-14" />
+            <img src="assets/img/logo.png" alt="Logo" class="w-14" />
           </a>
+
+          <div class="relative group">
+            <button id="language-toggle" class="flex items-center gap-2 focus:outline-none">
+              <img src="assets/img/flags/us.svg" alt="Current Language" class="w-6 h-4 rounded-sm" id="current-flag" />
+              <i class="ri-arrow-down-s-line text-white"></i>
+            </button>
+
+            <div id="language-dropdown" class="hidden absolute bg-[#1F1F1F] border border-[#333] rounded-md shadow-lg mt-2 w-48 z-50">
+              <ul class="py-1">
+                <li>
+                  <a href="#" data-lang="en" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/us.svg" alt="English" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="es" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/es.svg" alt="Spanish" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Español</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/id.svg" alt="Bahasa Indonesia" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Bahasa Indonesia </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="pt" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/pt.svg" alt="Português" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Português</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="de" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/de.svg" alt="Deutsch" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Deutsch</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="fr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/fr.svg" alt="Français" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Français</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="jp" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/jp.svg" alt="日本語" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>日本語</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="ru" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ru.svg" alt="Русский" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Русский</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="tr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/tr.svg" alt="Türkçe" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Türkçe</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="kr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/kr.svg" alt="한국어" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>한국어</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-lang="ph" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ph.svg" alt="Filipino" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Filipino</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
+        <div id="google_translate_element" class="hidden"></div>
         <div
           id="nav-menu"
           class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20"
@@ -216,7 +317,7 @@
                   <option value="ko">Korea</option>
                   <option value="tl">Filipina</option>
                 </select> -->
-                <div id="google_translate_element"></div>
+                <!-- <div id="google_translate_element"></div> -->
               </div>
             </li>
             <li>
@@ -465,69 +566,12 @@
 
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/flag.js"></script> -->
 
     <!-- Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarHeight = document.querySelector("#navbar").offsetHeight;
-
-        // Atur posisi header translate
-        const adjustTranslateHeader = () => {
-          const banner = document.querySelector(".goog-te-banner-frame");
-          if (banner) {
-            banner.style.top = `${navbarHeight}px`;
-            banner.style.position = "fixed";
-          }
-        };
-
-        // Jalankan pertama kali
-        adjustTranslateHeader();
-
-        // Pantau perubahan (jika header muncul belakangan)
-        setInterval(adjustTranslateHeader, 500);
-      });
-    </script>
-
-    <script>
-      // Fungsi modifikasi untuk BLOCK header Google Translate
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
-            autoDisplay: false,
-            disableTracking: true, // Tambahkan ini
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-
-        // BLOCK HEADER secara paksa dengan interval
-        const stopBanner = setInterval(() => {
-          if (!document.querySelector(".goog-te-banner-frame")) return;
-
-          // 1. Sembunyikan banner
-          document.querySelector(".goog-te-banner-frame").style.display = "none";
-
-          // 2. Hapus class 'translated-ltr' dari body
-          document.body.classList.remove("translated-ltr");
-
-          // 3. Stop interval setelah berhasil
-          clearInterval(stopBanner);
-        }, 50);
-      }
-
-      // Blokir event show banner
-      document.addEventListener("DOMContentLoaded", () => {
-        document.cookie = "googtrans=/en/en; path=/; expires=Thu, 01 Jan 2099 00:00:00 UTC";
-      });
-
-      document.querySelector(".skiptranslate")?.remove();
-    </script>
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
     <!-- AOS -->
     <script>
@@ -590,5 +634,7 @@
         setTimeout(showSlides, 45000);
       }
     </script>
+
+    <script src="assets/js/translate.js"></script>
   </body>
 </html>
