@@ -1,9 +1,59 @@
-<svg width="513" height="943" viewBox="0 0 513 943" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="41.5" cy="471.5" r="471.5" fill="url(#paint0_radial_18_34)"/>
-<defs>
-<radialGradient id="paint0_radial_18_34" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.5 471.5) rotate(89.7878) scale(366.876)">
-<stop stop-color="#1C4C00"/>
-<stop offset="1" stop-color="#1C4C00" stop-opacity="0"/>
-</radialGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="513"
+   height="943"
+   viewBox="0 0 513 943"
+   fill="none"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="Ellipse 1.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.40827147"
+     inkscape:cx="169.00519"
+     inkscape:cy="542.53117"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11" />
+  <circle
+     cx="41.5"
+     cy="471.5"
+     fill="url(#paint0_radial_18_34)"
+     id="circle2"
+     r="471.5" />
+  <defs
+     id="defs9">
+    <radialGradient
+       id="paint0_radial_18_34"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(41.5 471.5) rotate(89.7878) scale(366.876)">
+      <stop
+         stop-color="#1C4C00"
+         id="stop4"
+         style="stop-color:#ff6600;stop-opacity:1" />
+      <stop
+         offset="1"
+         stop-color="#1C4C00"
+         stop-opacity="0"
+         id="stop6" />
+    </radialGradient>
+  </defs>
 </svg>
