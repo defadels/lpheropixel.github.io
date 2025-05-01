@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        /* Add these modal animation styles */
+        #portfolio-modal {
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          background-color: rgba(0,0,0,0.7);
+          backdrop-filter: blur(5px);
+        }
+        
+        #portfolio-modal.show {
+          opacity: 1;
+          visibility: visible;
+        }
+        
+        #portfolio-modal .relative {
+          transform: scale(0.95);
+          transition: transform 0.3s ease;
+        }
+        
+        #portfolio-modal.show .relative {
+          transform: scale(1);
+        }
+      </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
+          <div>
+              <a href="index.html">
+                  <img src="assets/img/logo.png" alt="" class="w-14">
+              </a>
+          </div>
+
+          <div id="nav-menu"
+              class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row px-5">
+                  <li>
+                      <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
+                  </li>
+                  <li>
+                      <a href="index.html#portofolio" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">Portfolio</a>
+                  </li>
+                  <li>
+                      <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">How it Works</a>
+                  </li>
+                  <li>
+                      <a href="index.html#formApp" class="nav-link">
+                          <div class="relative inline-block">
+                              <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-xl bg-[#379600] opacity-60 rounded-md z-0"></div>
+              
+                              <span class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] duration-300 lg:py-3 lg:px-7 lg:text-base relative z-10">
+                                  Apply Now
+                              </span>
+                          </div>
+                      </a>
+                  </li>
+                  
+              </ul>
+          </div>
+
+          <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+              <i class="ri-menu-line" id="hamburger"></i>
+          </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section id="about" class="bg-[#000000] relative overflow-x-hidden">
+            <!-- Blob 2 -->
+            <div
+                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[30%] left-[40%] translate-x-[50%] blur-[200px]">
+
+            </div>
+            <div
+                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[10%] left-[40%] translate-x-[50%] blur-[200px]">
+
+            </div>
+            <div class="w-full lg:container">
+                <!-- blob 1 -->
+                <img src="assets/img/Ellipse 1.svg" alt="" class="w-96 absolute -z-10 -top-48 -left-12 opacity-80">
+                <div class="text-start">
+                    <h1 data-aos="fade-up" class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12 uppercase text-center">Privacy Policy</h1>
+                    <article class="max-w-4xl mx-auto px-4 py-8 text-gray-300 space-y-6">
+                        <!-- General Information -->
+                        <p class="font-bold text-white">General note and mandatory information</p>
+                        <p class="font-bold text-white">Designation of the responsible body</p>
+                        <p>The place responsible for data processing on this website is:</p>
+                        
+                        <div class="space-y-1">
+                          <p class="font-medium text-white">Arazhul Studios GmbH & Co. KG</p>
+                          <p>Ludwig-Erhard-Allee 10</p>
+                          <p>76131 Karlsruhe</p>
+                          <p class="pt-2">E-mail: contact@heropixels.org</p>
+                        </div>
+                        
+                        <p>The responsible body decides alone or jointly with others on the purposes and means of processing personal data (e.g. names, contact details, etc.)</p>
+                      
+                        <!-- Revocation Section -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Revocation of your consent to data processing</p>
+                          <p>Only with your express consent are some data processing operations possible. A revocation of your already given consent is possible at any time. An informal notification by e-mail is sufficient for the revocation. The legality of the data processing carried out up to the revocation remains unaffected by the revocation.</p>
+                        </div>
+                      
+                        <!-- Right to Appeal Section -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Right to appeal to the competent supervisory authority</p>
+                          <p>As a data subject, you have the right to complain to the competent supervisory authority in the event of a breach of data protection law. The competent supervisory authority with regard to data protection issues is the State Data Protection Commissioner of the federal state in which our company is located. The following link provides a list of the data protection officers and their contact details: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" class="text-green-500 hover:underline">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+                        </div>
+                      
+                        <!-- Data Transferability -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Right to data transferability</p>
+                          <p>You have the right to have data, which we process automatically on the basis of your consent or in fulfilment of a contract, handed over to you or to third parties. The data will be provided in a machine-readable format. If you request the direct transfer of the data to another responsible party, this will only be done to the extent that it is technically feasible.</p>
+                        </div>
+                      
+                        <!-- Information Rights -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Right to information, correction, blocking, deletion</p>
+                          <p>Within the framework of the applicable legal provisions, you have the right to obtain information free of charge at any time about your stored personal data, the origin of the data, its recipients and the purpose of the data processing and, if applicable, a right to correct, block or delete this data. In this regard and also for further questions on the subject of personal data, you can contact us at any time using the contact options listed in the imprint.</p>
+                        </div>
+                      
+                        <!-- SSL Encryption -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">SSL or TLS encryption</p>
+                          <p>For security reasons and to protect the transmission of confidential content that you send to us as the site operator, our website uses SSL or TLS encryption. This means that data that you transmit via this website cannot be read by third parties. You can recognise an encrypted connection by the "https://" address line of your browser and the lock symbol in the browser line.</p>
+                        </div>
+                      
+                        <!-- Server Log Files -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Server log files</p>
+                          <p>In server log files, the provider of the website automatically collects and stores information that your browser automatically sends to us. These are:</p>
+                          <ul class="list-disc pl-5 space-y-1 mt-2">
+                            <li>Visited page on our domain</li>
+                            <li>Date and time of the server request</li>
+                            <li>Browser type and version</li>
+                            <li>Operating system in use</li>
+                            <li>Referrer URL</li>
+                            <li>Host name of the accessing computer</li>
+                            <li>IP address</li>
+                          </ul>
+                          <p class="pt-2">This data is not merged with other data sources. The basis for data processing is Art. 6 para. 1 lit. b DSGVO, which permits the processing of data for the fulfilment of a contract or pre-contractual measures.</p>
+                        </div>
+                      
+                        <!-- Contact Form -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Contact form</p>
+                          <p>Data transmitted via the contact form will be stored including your contact data in order to be able to process your enquiry or to be available for follow-up questions. These data will not be passed on without your consent.</p>
+                        </div>
+                      
+                        <!-- Cookies -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Cookies</p>
+                          <p>Our website uses cookies. These are small text files that your web browser stores on your end device. Cookies help us to make our offer more user-friendly, effective and safer.</p>
+                        </div>
+                      
+                        <!-- Google Analytics -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Google Analytics</p>
+                          <p>Our website uses functions of the web analysis service Google Analytics. The provider of the web analysis service is Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
+                          <p>Opt-out: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" class="text-green-500 hover:underline">https://tools.google.com/dlpage/gaoptout?hl=de</a></p>
+                        </div>
+                      
+                        <!-- Payment Providers -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Payment Providers</p>
+                          <p>Our website allows payment via PayPal and Sofortüberweisung. Payment data is processed by these providers according to their privacy policies.</p>
+                        </div>
+                      
+                        <!-- Twitter -->
+                        <div class="space-y-2">
+                          <p class="font-bold text-white">Twitter plugin</p>
+                          <p>Our website uses functions of the Twitter service. When using Twitter and the "Re-Tweet" function, websites you visit will be linked to your Twitter account.</p>
+                          <p>Privacy policy: <a href="https://twitter.com/privacy" class="text-green-500 hover:underline">https://twitter.com/privacy</a></p>
+                        </div>
+                      </article>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-[#000000] pb-10 lg:py-10">
+      <div class="w-full flex flex-col items-center pt-3">
+          <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
+          <div class="flex items-center justify-center gap-4 my-6">
+              <a href="https://x.com/Heropixel_Games" target="_blank">
+                  <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
+              </a>
+              <a href="https://www.tiktok.com/@heropixelgames" target="_blank">
+                  <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://discord.gg/uWnN56Z" target="_blank">
+                  <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://www.instagram.com/heropixel_games/" target="_blank">
+                  <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://youtube.com/@heropixelgames" target="_blank">
+                  <i class="ri-youtube-fill text-4xl lg:text-5xl"></i>
+              </a>
+          </div>
+          <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
+          <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
+              HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="https://heropixel.games/imprint.html" target="_blank">Imprint.</a></span></p>
+      </div>
+  </footer>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init({
+            startEvent: 'load',
+            duration: 800,
+            easing: 'ease-out-quad',
+            offset: 120,
+            delay: 100,
+          });
+    </script>
+
+</body>
+
+</html>
