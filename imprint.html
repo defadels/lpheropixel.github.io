@@ -1,10 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
 
     <!-- Remixicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
@@ -13,173 +12,186 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <style>
-        /* Add these modal animation styles */
-        #portfolio-modal {
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity 0.3s ease, visibility 0.3s ease;
-          background-color: rgba(0,0,0,0.7);
-          backdrop-filter: blur(5px);
-        }
-        
-        #portfolio-modal.show {
-          opacity: 1;
-          visibility: visible;
-        }
-        
-        #portfolio-modal .relative {
-          transform: scale(0.95);
-          transition: transform 0.3s ease;
-        }
-        
-        #portfolio-modal.show .relative {
-          transform: scale(1);
-        }
-      </style>
-</head>
 
-<body>
+    <style>
+      /* Add these modal animation styles */
+      #portfolio-modal {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+      }
+
+      #portfolio-modal.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      #portfolio-modal .relative {
+        transform: scale(0.95);
+        transition: transform 0.3s ease;
+      }
+
+      #portfolio-modal.show .relative {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- Header -->
     <header id="navbar" class="fixed w-full top-0 left-0 z-50">
-        <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
-            <div>
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="" class="w-14">
-                </a>
-            </div>
+      <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
+        <div>
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="" class="w-14" />
+          </a>
+        </div>
 
-            <div id="nav-menu"
-                class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row">
-                    <li>
-                        <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
-                    </li>
-                    <li>
-                        <a href="index.html#portofolio" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">How it Works</a>
-                    </li>
-                    <li>
-                        <a href="index.html#formApp" class="nav-link">
-                            <span
-                                class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] shadow-custom duration-300 lg:py-3 lg:px-7 lg:text-base">Apply
-                                Now</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div
+          id="nav-menu"
+          class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li>
+              <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
+            </li>
+            <li>
+              <a href="index.html#portofolio" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">Portfolio</a>
+            </li>
+            <li>
+              <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">How it Works</a>
+            </li>
+            <li>
+              <a href="index.html#formApp" class="nav-link">
+                <span class="bg-[#ff6100] hover:bg-[#d44500] px-12 py-4 apply-button text-[20px] shadow-custom duration-300 lg:py-3 lg:px-7 lg:text-base">Apply Now</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
-                <i class="ri-menu-line" id="hamburger"></i>
-            </div>
-        </nav>
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-line" id="hamburger"></i>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- About -->
-        <section id="about" class="bg-[#000000] relative overflow-x-hidden">
-            <!-- Blob 2 -->
-            <div
-                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[30%] left-[40%] translate-x-[50%] blur-[200px]">
-
-            </div>
-            <div
-                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[10%] left-[40%] translate-x-[50%] blur-[200px]">
-
-            </div>
-            <div class="w-full lg:container">
-                <!-- blob 1 -->
-                <img src="assets/img/Ellipse 1.svg" alt="" class="w-96 absolute -z-10 -top-48 -left-12 opacity-80">
-                <div class="text-start">
-                    <h1 data-aos="fade-up" class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12 uppercase text-center">Privacy Policy</h1>
-                    <div class="max-w-4xl mx-auto px-4 py-8 text-gray-300 space-y-6">
-                        <!-- Company Information -->
-                        <article class="space-y-4">
-                          <p class="font-bold text-white">Information provided according to § 5 TMG (German Telemedia Act):</p>
-                          <div class="space-y-1">
-                            <p class="font-medium">Arazhul Studios GmbH & Co. KG</p>
-                            <p>Ludwig-Erhard-Allee 10</p>
-                            <p>76131 Karlsruhe</p>
-                          </div>
-                          
-                          <div class="space-y-1">
-                            <p class="font-bold text-white">Authorized representative:</p>
-                            <p>Heropixel Games</p>
-                          </div>
-                          
-                          <div class="space-y-1">
-                            <p class="font-bold text-white">Contact:</p>
-                            <p>E-mail: <a href="mailto:contact@heropixels.org" class="text-green-500 hover:underline">contact@heropixels.org</a></p>
-                          </div>
-                          
-                          <div class="space-y-1">
-                            <p class="font-bold text-white">VAT:</p>
-                            <p>VAT Id number according to § 27 a German Value Added Tax Act:</p>
-                            <p>DE299865823</p>
-                          </div>
-                        </article>
-                      
-                        <!-- Disclaimer Sections -->
-                        <div class="space-y-6">
-                          <p class="font-bold text-white">Disclaimer of liability:</p>
-                          
-                          <div class="space-y-2">
-                            <p class="font-bold text-white">Liability for contents</p>
-                            <p>The contents of our pages were created with the greatest care. However, we cannot guarantee that the contents are correct, complete and up-to-date. As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG (German Telemedia Act) and general laws. According to §§ 8 to 10 TMG we are not obliged to monitor transmitted or stored information from third parties or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected by this. However, liability in this respect is only possible from the time of knowledge of a concrete infringement. If we become aware of any such legal infringements, we will remove the content in question immediately.</p>
-                          </div>
-                          
-                          <div class="space-y-2">
-                            <p class="font-bold text-white">Liability for links</p>
-                            <p>Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore we cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the contents of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not identified at the time of linking. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately.</p>
-                          </div>
-                          
-                          <div class="space-y-2">
-                            <p class="font-bold text-white">Copyright</p>
-                            <p>The contents and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of use outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of these pages are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are observed. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such contents immediately.</p>
-                          </div>
-                          
-                          <div class="space-y-2">
-                            <p class="font-bold text-white">Data protection</p>
-                            <p>The use of our website is usually possible without providing personal data. As far as personal data (e.g. name, address or e-mail addresses) is collected on our website, this is always done on a voluntary basis, as far as possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission over the Internet (e.g. communication by e-mail) can have security gaps. A complete protection of data against access by third parties is not possible. The use by third parties of contact data published within the framework of the imprint obligation for the purpose of sending advertising and information material not expressly requested is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, for example through spam mails.</p>
-                          </div>
-                        </div>
-                      </div>
+      <!-- About -->
+      <section id="about" class="bg-[#000000] relative overflow-x-hidden">
+        <!-- Blob 2 -->
+        <div class="circlePosition w-[800px] h-[380px] bg-[#ff6100] rounded-full absolute -z-10 top-[30%] left-[40%] translate-x-[50%] blur-[200px]"></div>
+        <div class="circlePosition w-[800px] h-[380px] bg-[#ff6100] rounded-full absolute -z-10 top-[10%] left-[40%] translate-x-[50%] blur-[200px]"></div>
+        <div class="w-full lg:container">
+          <!-- blob 1 -->
+          <img src="assets/img/Ellipse 1.svg" alt="" class="w-96 absolute -z-10 -top-48 -left-12 opacity-80" />
+          <div class="text-start">
+            <h1 data-aos="fade-up" class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12 uppercase text-center">Imprint</h1>
+            <div class="max-w-4xl mx-auto px-4 py-8 text-gray-300 space-y-6">
+              <!-- Company Information -->
+              <article class="space-y-4">
+                <p class="font-bold text-white">Information provided according to § 5 TMG (German Telemedia Act):</p>
+                <div class="space-y-1">
+                  <p class="font-medium">Arazhul Studios GmbH & Co. KG</p>
+                  <p>Ludwig-Erhard-Allee 10</p>
+                  <p>76131 Karlsruhe</p>
                 </div>
+
+                <div class="space-y-1">
+                  <p class="font-bold text-white">Authorized representative:</p>
+                  <p>Heropixel Games</p>
+                </div>
+
+                <div class="space-y-1">
+                  <p class="font-bold text-white">Contact:</p>
+                  <p>E-mail: <a href="mailto:contact@heropixels.org" class="text-amber-500 hover:underline">contact@heropixels.org</a></p>
+                </div>
+
+                <div class="space-y-1">
+                  <p class="font-bold text-white">VAT:</p>
+                  <p>VAT Id number according to § 27 a German Value Added Tax Act:</p>
+                  <p>DE299865823</p>
+                </div>
+              </article>
+
+              <!-- Disclaimer Sections -->
+              <div class="space-y-6">
+                <p class="font-bold text-white">Disclaimer of liability:</p>
+
+                <div class="space-y-2">
+                  <p class="font-bold text-white">Liability for contents</p>
+                  <p>
+                    The contents of our pages were created with the greatest care. However, we cannot guarantee that the contents are correct, complete and up-to-date. As a service provider, we are responsible for our own content on these
+                    pages in accordance with § 7 para.1 TMG (German Telemedia Act) and general laws. According to §§ 8 to 10 TMG we are not obliged to monitor transmitted or stored information from third parties or to investigate
+                    circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected by this. However, liability in this respect is only possible from the time
+                    of knowledge of a concrete infringement. If we become aware of any such legal infringements, we will remove the content in question immediately.
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <p class="font-bold text-white">Liability for links</p>
+                  <p>
+                    Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore we cannot assume any liability for these external contents. The respective provider or operator of the
+                    sites is always responsible for the contents of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not identified at the time of linking. However,
+                    a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately.
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <p class="font-bold text-white">Copyright</p>
+                  <p>
+                    The contents and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of use outside the limits of copyright law require the written
+                    consent of the respective author or creator. Downloads and copies of these pages are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of
+                    third parties are observed. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any
+                    infringements, we will remove such contents immediately.
+                  </p>
+                </div>
+
+                <div class="space-y-2">
+                  <p class="font-bold text-white">Data protection</p>
+                  <p>
+                    The use of our website is usually possible without providing personal data. As far as personal data (e.g. name, address or e-mail addresses) is collected on our website, this is always done on a voluntary basis, as far
+                    as possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission over the Internet (e.g. communication by e-mail) can have security gaps. A
+                    complete protection of data against access by third parties is not possible. The use by third parties of contact data published within the framework of the imprint obligation for the purpose of sending advertising and
+                    information material not expressly requested is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information,
+                    for example through spam mails.
+                  </p>
+                </div>
+              </div>
             </div>
-
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-[#000000] pb-10 lg:py-10">
-        <div class="w-full flex flex-col items-center pt-3">
-            <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
-            <div class="flex items-center justify-center gap-4 my-6">
-                <a href="https://x.com/Heropixel_Games" target="_blank">
-                    <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
-                </a>
-                <a href="https://www.tiktok.com/@heropixelgames" target="_blank">
-                    <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://discord.gg/uWnN56Z" target="_blank">
-                    <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://www.instagram.com/heropixel_games/" target="_blank">
-                    <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://www.planetminecraft.com/member/heropixel_games/" target="_blank">
-                    <img src="assets/img/iconminecraft.jpg" alt="icon-minecraft" class="w-12">
-                </a>
-            </div>
-            <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
-            <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
-                HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="imprint.html" target="_blank">Imprint.</a></span></p>
+      <div class="w-full flex flex-col items-center pt-3">
+        <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
+        <div class="flex items-center justify-center gap-4 my-6">
+          <a href="https://x.com/Heropixel_Games" target="_blank">
+            <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
+          </a>
+          <a href="https://www.tiktok.com/@heropixelgames" target="_blank">
+            <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
+          </a>
+          <a href="https://discord.gg/uWnN56Z" target="_blank">
+            <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
+          </a>
+          <a href="https://www.instagram.com/heropixel_games/" target="_blank">
+            <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
+          </a>
+          <a href="https://www.planetminecraft.com/member/heropixel_games/" target="_blank">
+            <img src="assets/img/iconminecraft.jpg" alt="icon-minecraft" class="w-12" />
+          </a>
         </div>
+        <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
+        <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">
+          Copyright © HeroPixels.org 2025. <span class="text-amber-500"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="imprint.html" target="_blank">Imprint.</a></span>
+        </p>
+      </div>
     </footer>
 
     <!-- Main Js -->
@@ -190,15 +202,13 @@
 
     <!-- AOS -->
     <script>
-        AOS.init({
-            startEvent: 'load',
-            duration: 800,
-            easing: 'ease-out-quad',
-            offset: 120,
-            delay: 100,
-          });
+      AOS.init({
+        startEvent: "load",
+        duration: 800,
+        easing: "ease-out-quad",
+        offset: 120,
+        delay: 100,
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

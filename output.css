@@ -2248,6 +2248,11 @@ video {
   background-color: rgb(255 98 0 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#d44500\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 85 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#379600\] {
   --tw-bg-opacity: 1;
   background-color: rgb(55 150 0 / var(--tw-bg-opacity, 1));
@@ -2782,6 +2787,16 @@ video {
 }
 
 .text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+}
+
+.text-amber-500 {
+  --tw-text-opacity: 1;
+  color: rgb(255 191 0 / var(--tw-text-opacity, 1));
+}
+
+.text-amber-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
