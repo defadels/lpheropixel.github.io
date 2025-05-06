@@ -81,10 +81,88 @@
     <!-- Header -->
     <header id="navbar" class="fixed w-full top-20 left-0 z-50">
       <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
-        <div>
+        <div class="flex items-center gap-4">
           <a href="index.html">
-            <img src="assets/img/logo.png" alt="" class="w-14" />
+            <img src="assets/img/logo.png" alt="Logo" class="w-14" />
           </a>
+
+          <div class="relative group" id="language-selector">
+            <button id="language-toggle" class="flex items-center gap-2 focus:outline-none">
+              <img src="assets/img/flags/us.svg" alt="Current Language" class="w-6 h-4 rounded-sm" id="current-flag" />
+              <i class="ri-arrow-down-s-line text-white"></i>
+            </button>
+
+            <div id="language-dropdown" class="hidden absolute bg-[#1F1F1F] border border-[#333] rounded-md shadow-lg mt-2 w-48 z-50">
+              <ul class="py-1">
+                <li>
+                  <button data-lang="en" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/us.svg" alt="English" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>English</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="es" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/es.svg" alt="Spanish" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Español</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/id.svg" alt="Bahasa Indonesia" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Bahasa Indonesia </span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="pt" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/pt.svg" alt="Português" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Português</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="de" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/de.svg" alt="Deutsch" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Deutsch</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="fr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/fr.svg" alt="Français" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Français</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="jp" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/jp.svg" alt="日本語" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>日本語</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="ru" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ru.svg" alt="Русский" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Русский</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="tr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/tr.svg" alt="Türkçe" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Türkçe</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="kr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/kr.svg" alt="한국어" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>한국어</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="ph" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ph.svg" alt="Filipino" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Filipino</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div
@@ -100,24 +178,6 @@
             </li>
             <li>
               <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#ff6100'" onmouseout="this.style.color='white'">How it Works</a>
-            </li>
-            <li>
-              <div class="relative inline-block text-left">
-                <!-- <select id="langSelect" class="bg-black border border-gray-300 text-sm rounded p-2">
-                  <option value="">Select Language</option>
-                  <option value="es">Spanyol</option>
-                  <option value="pt">Portugis (Brasil)</option>
-                  <option value="de">Jerman</option>
-                  <option value="fr">Prancis</option>
-                  <option value="ja">Jepang</option>
-                  <option value="ru">Rusia</option>
-                  <option value="tr">Turki</option>
-                  <option value="id">Bahasa Indonesia</option>
-                  <option value="ko">Korea</option>
-                  <option value="tl">Filipina</option>
-                </select> -->
-                <div id="google_translate_element"></div>
-              </div>
             </li>
             <li>
               <a href="index.html#formApp" class="nav-link">
@@ -147,7 +207,7 @@
             <div class="max-w-4xl mx-auto px-4 py-8 text-gray-300 space-y-6">
               <!-- Company Information -->
               <article class="space-y-4">
-                <p class="font-bold text-white">Information provided according to § 5 TMG (German Telemedia Act):</p>
+                <p data-i18n="imprint.generalInfo.title" class="font-bold text-white">Information provided according to § 5 TMG (German Telemedia Act):</p>
                 <div class="space-y-1">
                   <p class="font-medium">Arazhul Studios GmbH & Co. KG</p>
                   <p>Ludwig-Erhard-Allee 10</p>
@@ -155,12 +215,12 @@
                 </div>
 
                 <div class="space-y-1">
-                  <p class="font-bold text-white">Authorized representative:</p>
+                  <p data-i18n="imprint.generalInfo.authorized" class="font-bold text-white">Authorized representative:</p>
                   <p>Heropixel Games</p>
                 </div>
 
                 <div class="space-y-1">
-                  <p class="font-bold text-white">Contact:</p>
+                  <p data-i18n="imprint.generalInfo.contact" class="font-bold text-white">Contact:</p>
                   <p>E-mail: <a href="mailto:contact@heropixels.org" class="text-amber-500 hover:underline">contact@heropixels.org</a></p>
                 </div>
 
@@ -173,11 +233,11 @@
 
               <!-- Disclaimer Sections -->
               <div class="space-y-6">
-                <p class="font-bold text-white">Disclaimer of liability:</p>
+                <p data-i18n="imprint.discalimer.title" class="font-bold text-white">Disclaimer of liability:</p>
 
                 <div class="space-y-2">
-                  <p class="font-bold text-white">Liability for contents</p>
-                  <p>
+                  <p data-i18n="imprint.discalimer.liabilityForContent.title" class="font-bold text-white">Liability for contents</p>
+                  <p data-i18n="imprint.discalimer.liabilityForContent.content">
                     The contents of our pages were created with the greatest care. However, we cannot guarantee that the contents are correct, complete and up-to-date. As a service provider, we are responsible for our own content on these
                     pages in accordance with § 7 para.1 TMG (German Telemedia Act) and general laws. According to §§ 8 to 10 TMG we are not obliged to monitor transmitted or stored information from third parties or to investigate
                     circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected by this. However, liability in this respect is only possible from the time
@@ -186,8 +246,8 @@
                 </div>
 
                 <div class="space-y-2">
-                  <p class="font-bold text-white">Liability for links</p>
-                  <p>
+                  <p data-i18n="imprint.discalimer.liabilityForLinks.title" class="font-bold text-white">Liability for links</p>
+                  <p data-i18n="imprint.discalimer.liabilityForLinks.content">
                     Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore we cannot assume any liability for these external contents. The respective provider or operator of the
                     sites is always responsible for the contents of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not identified at the time of linking. However,
                     a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately.
@@ -195,8 +255,8 @@
                 </div>
 
                 <div class="space-y-2">
-                  <p class="font-bold text-white">Copyright</p>
-                  <p>
+                  <p data-i18n="imprint.discalimer.copyrights.title" class="font-bold text-white">Copyright</p>
+                  <p data-i18n="imprint.discalimer.copyrights.content">
                     The contents and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of use outside the limits of copyright law require the written
                     consent of the respective author or creator. Downloads and copies of these pages are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of
                     third parties are observed. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any
@@ -205,8 +265,8 @@
                 </div>
 
                 <div class="space-y-2">
-                  <p class="font-bold text-white">Data protection</p>
-                  <p>
+                  <p data-i18n="imprint.discalimer.dataProtection.title" class="font-bold text-white">Data protection</p>
+                  <p data-i18n="imprint.discalimer.dataProtection.content">
                     The use of our website is usually possible without providing personal data. As far as personal data (e.g. name, address or e-mail addresses) is collected on our website, this is always done on a voluntary basis, as far
                     as possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission over the Internet (e.g. communication by e-mail) can have security gaps. A
                     complete protection of data against access by third parties is not possible. The use by third parties of contact data published within the framework of the imprint obligation for the purpose of sending advertising and
@@ -254,6 +314,8 @@
     <!-- Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+    <script src="https://unpkg.com/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <script type="module" src="assets/js/translate.js"></script>
     <!-- AOS -->
     <script>
       AOS.init({
@@ -264,65 +326,5 @@
         delay: 100,
       });
     </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarHeight = document.querySelector("#navbar").offsetHeight;
-
-        // Atur posisi header translate
-        const adjustTranslateHeader = () => {
-          const banner = document.querySelector(".goog-te-banner-frame");
-          if (banner) {
-            banner.style.top = `${navbarHeight}px`;
-            banner.style.position = "fixed";
-          }
-        };
-
-        // Jalankan pertama kali
-        adjustTranslateHeader();
-
-        // Pantau perubahan (jika header muncul belakangan)
-        setInterval(adjustTranslateHeader, 500);
-      });
-    </script>
-
-    <script>
-      // Fungsi modifikasi untuk BLOCK header Google Translate
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
-            autoDisplay: false,
-            disableTracking: true, // Tambahkan ini
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-
-        // BLOCK HEADER secara paksa dengan interval
-        const stopBanner = setInterval(() => {
-          if (!document.querySelector(".goog-te-banner-frame")) return;
-
-          // 1. Sembunyikan banner
-          document.querySelector(".goog-te-banner-frame").style.display = "none";
-
-          // 2. Hapus class 'translated-ltr' dari body
-          document.body.classList.remove("translated-ltr");
-
-          // 3. Stop interval setelah berhasil
-          clearInterval(stopBanner);
-        }, 50);
-      }
-
-      // Blokir event show banner
-      document.addEventListener("DOMContentLoaded", () => {
-        document.cookie = "googtrans=/en/en; path=/; expires=Thu, 01 Jan 2099 00:00:00 UTC";
-      });
-
-      document.querySelector(".skiptranslate")?.remove();
-    </script>
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

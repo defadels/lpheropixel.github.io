@@ -176,6 +176,16 @@
       }
 
       /* Animasi dropdown */
+
+      #language-dropdown {
+        pointer-events: auto !important;
+      }
+
+      #language-toggle {
+        cursor: pointer;
+        z-index: 1001;
+      }
+
       #language-dropdown {
         z-index: 1000;
         transition: all 0.3s ease;
@@ -184,6 +194,24 @@
       /* Animasi saat muncul */
       #language-dropdown:not(.hidden) {
         animation: fadeIn 0.3s;
+      }
+
+      .language-list li.active {
+        font-weight: bold;
+        background-color: #f0f0f0;
+      }
+
+      .language-list li {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+      }
+
+      .language-list img {
+        width: 24px;
+        height: auto;
       }
 
       @keyframes fadeIn {
@@ -208,7 +236,7 @@
             <img src="assets/img/logo.png" alt="Logo" class="w-14" />
           </a>
 
-          <div class="relative group">
+          <div class="relative group" id="language-selector">
             <button id="language-toggle" class="flex items-center gap-2 focus:outline-none">
               <img src="assets/img/flags/us.svg" alt="Current Language" class="w-6 h-4 rounded-sm" id="current-flag" />
               <i class="ri-arrow-down-s-line text-white"></i>
@@ -217,77 +245,76 @@
             <div id="language-dropdown" class="hidden absolute bg-[#1F1F1F] border border-[#333] rounded-md shadow-lg mt-2 w-48 z-50">
               <ul class="py-1">
                 <li>
-                  <a href="#" data-lang="en" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="en" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/us.svg" alt="English" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>English</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="es" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="es" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/es.svg" alt="Spanish" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Español</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/id.svg" alt="Bahasa Indonesia" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Bahasa Indonesia </span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="pt" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="pt" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/pt.svg" alt="Português" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Português</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="de" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="de" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/de.svg" alt="Deutsch" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Deutsch</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="fr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="fr" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/fr.svg" alt="Français" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Français</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="jp" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="jp" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/jp.svg" alt="日本語" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>日本語</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="ru" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="ru" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/ru.svg" alt="Русский" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Русский</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="tr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="tr" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/tr.svg" alt="Türkçe" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Türkçe</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="kr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="kr" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/kr.svg" alt="한국어" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>한국어</span>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" data-lang="ph" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                  <button data-lang="ph" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/ph.svg" alt="Filipino" class="w-6 h-4 mr-3 rounded-sm" />
                     <span>Filipino</span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div id="google_translate_element" class="hidden"></div>
         <div
           id="nav-menu"
           class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20"
@@ -302,24 +329,7 @@
             <li>
               <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#FF8539'" onmouseout="this.style.color='white'">How it Works</a>
             </li>
-            <li>
-              <div class="relative inline-block text-left">
-                <!-- <select id="langSelect" class="bg-black border border-gray-300 text-sm rounded p-2">
-                  <option value="">Select Language</option>
-                  <option value="es">Spanyol</option>
-                  <option value="pt">Portugis (Brasil)</option>
-                  <option value="de">Jerman</option>
-                  <option value="fr">Prancis</option>
-                  <option value="ja">Jepang</option>
-                  <option value="ru">Rusia</option>
-                  <option value="tr">Turki</option>
-                  <option value="id">Bahasa Indonesia</option>
-                  <option value="ko">Korea</option>
-                  <option value="tl">Filipina</option>
-                </select> -->
-                <!-- <div id="google_translate_element"></div> -->
-              </div>
-            </li>
+
             <li>
               <a href="index.html#formApp" class="nav-link">
                 <div class="relative inline-block">
@@ -349,8 +359,8 @@
         <div class="bg-black opacity-50 absolute w-full h-full"></div>
 
         <div class="container flex flex-col gap-2 md:gap-4 justify-center text-center items-center relative z-10 px-3">
-          <h1 data-aos="fade-up" class="w-full text-2xl md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your minecraft projects-<br />we'll bring to the marketplace.</h1>
-          <p data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-[10px] font- lg:text-2xl">Official partner. Simple process. Fair collaboration.</p>
+          <h1 data-i18n="welcome" data-aos="fade-up" class="w-full text-2xl md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your minecraft projects-<br />we'll bring to the marketplace.</h1>
+          <p data-i18n="subtitle" data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-[10px] font- lg:text-2xl">Official partner. Simple process. Fair collaboration.</p>
           <a href="index.html#formApp" class="nav-link my-8">
             <div class="relative inline-block">
               <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-md bg-[#ff6100] opacity-60 rounded-md z-0"></div>
@@ -573,6 +583,11 @@
 
     <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
+    <!-- Load i18next dari CDN -->
+    <!-- <script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.0.1/dist/umd/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script> -->
+
     <!-- AOS -->
     <script>
       AOS.init({
@@ -635,6 +650,9 @@
       }
     </script>
 
-    <script src="assets/js/translate.js"></script>
+    <!-- Di akhir body -->
+    <!-- <script type="module" src="assets/js/i18n.js"></script> -->
+    <script src="https://unpkg.com/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <script type="module" src="assets/js/translate.js"></script>
   </body>
 </html>

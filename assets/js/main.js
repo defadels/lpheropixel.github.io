@@ -1,3 +1,7 @@
+// Inisialisasi di main.js
+// import { initLanguageSwitcher } from "./translate";
+// document.addEventListener("DOMContentLoaded", initLanguageSwitcher);
+
 // -------------- Toggle Button --------------
 const navMenu = document.getElementById("nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -337,4 +341,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("language-toggle");
+  const dropdown = document.getElementById("language-dropdown");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopImmediatePropagation(); // Tambahkan ini
+    dropdown.classList.toggle("hidden");
+  });
 });

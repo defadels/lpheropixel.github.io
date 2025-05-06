@@ -38,42 +38,6 @@
       #portfolio-modal.show .relative {
         transform: scale(1);
       }
-
-      /* Pindahkan header Google Translate ke bawah navbar */
-      .goog-te-banner-frame {
-        position: fixed;
-        top: 80px !important; /* Sesuaikan dengan tinggi navbar Anda */
-        left: 0;
-        z-index: 999; /* Pastikan di bawah navbar (z-index navbar biasanya 1000+) */
-        width: 100%;
-        margin-top: 0;
-      }
-      /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
-      .goog-te-banner-frame.skiptranslate {
-        display: none !important;
-      }
-
-      /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
-      .goog-logo-link,
-      .goog-te-gadget span {
-        display: none !important;
-      }
-
-      /* HAPUS RUANG TAMBAHAN DARI GOOGLE */
-      .goog-te-banner-frame {
-        height: 0 !important;
-        visibility: hidden !important;
-      }
-
-      #goog-gt-tt,
-      .goog-te-balloon-frame {
-        display: none !important;
-      }
-
-      .goog-text-highlight {
-        background: none !important;
-        box-shadow: none !important;
-      }
     </style>
   </head>
 
@@ -81,10 +45,88 @@
     <!-- Header -->
     <header id="navbar" class="fixed w-full top-20 left-0 z-50">
       <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
-        <div>
+        <div class="flex items-center gap-4">
           <a href="index.html">
-            <img src="assets/img/logo.png" alt="" class="w-14" />
+            <img src="assets/img/logo.png" alt="Logo" class="w-14" />
           </a>
+
+          <div class="relative group" id="language-selector">
+            <button id="language-toggle" class="flex items-center gap-2 focus:outline-none">
+              <img src="assets/img/flags/us.svg" alt="Current Language" class="w-6 h-4 rounded-sm" id="current-flag" />
+              <i class="ri-arrow-down-s-line text-white"></i>
+            </button>
+
+            <div id="language-dropdown" class="hidden absolute bg-[#1F1F1F] border border-[#333] rounded-md shadow-lg mt-2 w-48 z-50">
+              <ul class="py-1">
+                <li>
+                  <button data-lang="en" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/us.svg" alt="English" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>English</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="es" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/es.svg" alt="Spanish" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Español</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/id.svg" alt="Bahasa Indonesia" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Bahasa Indonesia </span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="pt" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/pt.svg" alt="Português" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Português</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="de" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/de.svg" alt="Deutsch" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Deutsch</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="fr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/fr.svg" alt="Français" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Français</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="jp" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/jp.svg" alt="日本語" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>日本語</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="ru" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ru.svg" alt="Русский" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Русский</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="tr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/tr.svg" alt="Türkçe" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Türkçe</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="kr" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/kr.svg" alt="한국어" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>한국어</span>
+                  </button>
+                </li>
+                <li>
+                  <button data-lang="ph" class="flex items-center px-4 py-2 hover:bg-[#333]">
+                    <img src="assets/img/flags/ph.svg" alt="Filipino" class="w-6 h-4 mr-3 rounded-sm" />
+                    <span>Filipino</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div
@@ -101,24 +143,7 @@
             <li>
               <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#FF8539'" onmouseout="this.style.color='white'">How it Works</a>
             </li>
-            <li>
-              <div class="relative inline-block text-left">
-                <!-- <select id="langSelect" class="bg-black border border-gray-300 text-sm rounded p-2">
-                  <option value="">Select Language</option>
-                  <option value="es">Spanyol</option>
-                  <option value="pt">Portugis (Brasil)</option>
-                  <option value="de">Jerman</option>
-                  <option value="fr">Prancis</option>
-                  <option value="ja">Jepang</option>
-                  <option value="ru">Rusia</option>
-                  <option value="tr">Turki</option>
-                  <option value="id">Bahasa Indonesia</option>
-                  <option value="ko">Korea</option>
-                  <option value="tl">Filipina</option>
-                </select> -->
-                <div id="google_translate_element"></div>
-              </div>
-            </li>
+
             <li>
               <a href="index.html#formApp" class="nav-link">
                 <div class="relative inline-block">
@@ -150,9 +175,9 @@
             <h1 data-aos="fade-up" class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12 uppercase text-center">Privacy Policy</h1>
             <article class="max-w-4xl mx-auto px-4 py-8 text-gray-300 space-y-6">
               <!-- General Information -->
-              <p class="font-bold text-white">General note and mandatory information</p>
-              <p class="font-bold text-white">Designation of the responsible body</p>
-              <p>The place responsible for data processing on this website is:</p>
+              <p data-i18n="privacy.p1" class="font-bold text-white">General note and mandatory information</p>
+              <p data-i18n="privacy.p2" class="font-bold text-white">Designation of the responsible body</p>
+              <p data-i18n="privacy.p3">The place responsible for data processing on this website is:</p>
 
               <div class="space-y-1">
                 <p class="font-medium text-white">Arazhul Studios GmbH & Co. KG</p>
@@ -161,12 +186,12 @@
                 <p class="pt-2">E-mail: contact@heropixels.org</p>
               </div>
 
-              <p>The responsible body decides alone or jointly with others on the purposes and means of processing personal data (e.g. names, contact details, etc.)</p>
+              <p data-i18n="privacy.p4">The responsible body decides alone or jointly with others on the purposes and means of processing personal data (e.g. names, contact details, etc.)</p>
 
               <!-- Revocation Section -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Revocation of your consent to data processing</p>
-                <p>
+                <p data-i18n="privacy.p5" class="font-bold text-white">Revocation of your consent to data processing</p>
+                <p data-i18n="privacy.p6">
                   Only with your express consent are some data processing operations possible. A revocation of your already given consent is possible at any time. An informal notification by e-mail is sufficient for the revocation. The
                   legality of the data processing carried out up to the revocation remains unaffected by the revocation.
                 </p>
@@ -174,8 +199,8 @@
 
               <!-- Right to Appeal Section -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Right to appeal to the competent supervisory authority</p>
-                <p>
+                <p data-i18n="privacy.p7" class="font-bold text-white">Right to appeal to the competent supervisory authority</p>
+                <p data-i18n="privacy.p8">
                   As a data subject, you have the right to complain to the competent supervisory authority in the event of a breach of data protection law. The competent supervisory authority with regard to data protection issues is the
                   State Data Protection Commissioner of the federal state in which our company is located. The following link provides a list of the data protection officers and their contact details:
                   <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" class="text-amber-500 hover:underline">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.
@@ -184,8 +209,8 @@
 
               <!-- Data Transferability -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Right to data transferability</p>
-                <p>
+                <p data-i18n="privacy.p9" class="font-bold text-white">Right to data transferability</p>
+                <p data-i18n="privacy.p10">
                   You have the right to have data, which we process automatically on the basis of your consent or in fulfilment of a contract, handed over to you or to third parties. The data will be provided in a machine-readable format.
                   If you request the direct transfer of the data to another responsible party, this will only be done to the extent that it is technically feasible.
                 </p>
@@ -193,8 +218,8 @@
 
               <!-- Information Rights -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Right to information, correction, blocking, deletion</p>
-                <p>
+                <p data-i18n="privacy.p11" class="font-bold text-white">Right to information, correction, blocking, deletion</p>
+                <p data-i18n="privacy.p12">
                   Within the framework of the applicable legal provisions, you have the right to obtain information free of charge at any time about your stored personal data, the origin of the data, its recipients and the purpose of the
                   data processing and, if applicable, a right to correct, block or delete this data. In this regard and also for further questions on the subject of personal data, you can contact us at any time using the contact options
                   listed in the imprint.
@@ -203,8 +228,8 @@
 
               <!-- SSL Encryption -->
               <div class="space-y-2">
-                <p class="font-bold text-white">SSL or TLS encryption</p>
-                <p>
+                <p data-i18n="privacy.p13" class="font-bold text-white">SSL or TLS encryption</p>
+                <p data-i18n="privacy.p14">
                   For security reasons and to protect the transmission of confidential content that you send to us as the site operator, our website uses SSL or TLS encryption. This means that data that you transmit via this website cannot
                   be read by third parties. You can recognise an encrypted connection by the "https://" address line of your browser and the lock symbol in the browser line.
                 </p>
@@ -212,26 +237,26 @@
 
               <!-- Server Log Files -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Server log files</p>
-                <p>In server log files, the provider of the website automatically collects and stores information that your browser automatically sends to us. These are:</p>
+                <p data-i18n="privacy.p15" class="font-bold text-white">Server log files</p>
+                <p data-i18n="privacy.p16">In server log files, the provider of the website automatically collects and stores information that your browser automatically sends to us. These are:</p>
                 <ul class="list-disc pl-5 space-y-1 mt-2">
-                  <li>Visited page on our domain</li>
-                  <li>Date and time of the server request</li>
-                  <li>Browser type and version</li>
-                  <li>Operating system in use</li>
-                  <li>Referrer URL</li>
-                  <li>Host name of the accessing computer</li>
-                  <li>IP address</li>
+                  <li data-i18n="privacy.l1">Visited page on our domain</li>
+                  <li data-i18n="privacy.l2">Date and time of the server request</li>
+                  <li data-i18n="privacy.l3">Browser type and version</li>
+                  <li data-i18n="privacy.l4">Operating system in use</li>
+                  <li data-i18n="privacy.l5">Referrer URL</li>
+                  <li data-i18n="privacy.l6">Host name of the accessing computer</li>
+                  <li data-i18n="privacy.l7">IP address</li>
                 </ul>
-                <p class="pt-2">
+                <p data-i18n="privacy.p17" class="pt-2">
                   This data is not merged with other data sources. The basis for data processing is Art. 6 para. 1 lit. b DSGVO, which permits the processing of data for the fulfilment of a contract or pre-contractual measures.
                 </p>
               </div>
 
               <!-- Contact Form -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Contact form</p>
-                <p>
+                <p data-i18n="privacy.p18" class="font-bold text-white">Contact form</p>
+                <p data-i18n="privacy.p19">
                   Data transmitted via the contact form will be stored including your contact data in order to be able to process your enquiry or to be available for follow-up questions. These data will not be passed on without your
                   consent.
                 </p>
@@ -239,28 +264,28 @@
 
               <!-- Cookies -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Cookies</p>
-                <p>Our website uses cookies. These are small text files that your web browser stores on your end device. Cookies help us to make our offer more user-friendly, effective and safer.</p>
+                <p data-i18n="privacy.p20" class="font-bold text-white">Cookies</p>
+                <p data-i18n="privacy.p21">Our website uses cookies. These are small text files that your web browser stores on your end device. Cookies help us to make our offer more user-friendly, effective and safer.</p>
               </div>
 
               <!-- Google Analytics -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Google Analytics</p>
-                <p>Our website uses functions of the web analysis service Google Analytics. The provider of the web analysis service is Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
-                <p>Opt-out: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" class="text-amber-500 hover:underline">https://tools.google.com/dlpage/gaoptout?hl=de</a></p>
+                <p data-i18n="privacy.p22" class="font-bold text-white">Google Analytics</p>
+                <p data-i18n="privacy.p23">Our website uses functions of the web analysis service Google Analytics. The provider of the web analysis service is Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
+                <p data-i18n="privacy.p24">Opt-out: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" class="text-amber-500 hover:underline">https://tools.google.com/dlpage/gaoptout?hl=de</a></p>
               </div>
 
               <!-- Payment Providers -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Payment Providers</p>
-                <p>Our website allows payment via PayPal and Sofortüberweisung. Payment data is processed by these providers according to their privacy policies.</p>
+                <p data-i18n="privacy.p25" class="font-bold text-white">Payment Providers</p>
+                <p data-i18n="privacy.p26">Our website allows payment via PayPal and Sofortüberweisung. Payment data is processed by these providers according to their privacy policies.</p>
               </div>
 
               <!-- Twitter -->
               <div class="space-y-2">
-                <p class="font-bold text-white">Twitter plugin</p>
-                <p>Our website uses functions of the Twitter service. When using Twitter and the "Re-Tweet" function, websites you visit will be linked to your Twitter account.</p>
-                <p>Privacy policy: <a href="https://twitter.com/privacy" class="text-amber-500 hover:underline">https://twitter.com/privacy</a></p>
+                <p data-i18n="privacy.p27" class="font-bold text-white">Twitter plugin</p>
+                <p data-i18n="privacy.p28">Our website uses functions of the Twitter service. When using Twitter and the "Re-Tweet" function, websites you visit will be linked to your Twitter account.</p>
+                <p data-i18n="privacy.p29">Privacy policy: <a href="https://twitter.com/privacy" class="text-amber-500 hover:underline">https://twitter.com/privacy</a></p>
               </div>
             </article>
           </div>
@@ -312,64 +337,7 @@
       });
     </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarHeight = document.querySelector("#navbar").offsetHeight;
-
-        // Atur posisi header translate
-        const adjustTranslateHeader = () => {
-          const banner = document.querySelector(".goog-te-banner-frame");
-          if (banner) {
-            banner.style.top = `${navbarHeight}px`;
-            banner.style.position = "fixed";
-          }
-        };
-
-        // Jalankan pertama kali
-        adjustTranslateHeader();
-
-        // Pantau perubahan (jika header muncul belakangan)
-        setInterval(adjustTranslateHeader, 500);
-      });
-    </script>
-
-    <script>
-      // Fungsi modifikasi untuk BLOCK header Google Translate
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "es,pt,de,fr,ja,ru,tr,id,ko,tl",
-            autoDisplay: false,
-            disableTracking: true, // Tambahkan ini
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-
-        // BLOCK HEADER secara paksa dengan interval
-        const stopBanner = setInterval(() => {
-          if (!document.querySelector(".goog-te-banner-frame")) return;
-
-          // 1. Sembunyikan banner
-          document.querySelector(".goog-te-banner-frame").style.display = "none";
-
-          // 2. Hapus class 'translated-ltr' dari body
-          document.body.classList.remove("translated-ltr");
-
-          // 3. Stop interval setelah berhasil
-          clearInterval(stopBanner);
-        }, 50);
-      }
-
-      // Blokir event show banner
-      document.addEventListener("DOMContentLoaded", () => {
-        document.cookie = "googtrans=/en/en; path=/; expires=Thu, 01 Jan 2099 00:00:00 UTC";
-      });
-
-      document.querySelector(".skiptranslate")?.remove();
-    </script>
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://unpkg.com/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <script type="module" src="assets/js/translate.js"></script>
   </body>
 </html>

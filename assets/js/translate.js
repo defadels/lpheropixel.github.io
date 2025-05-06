@@ -1,6 +1,6 @@
-// Konfigurasi Bahasa
+// assets/js/translate.js
 const languages = {
-  en: { code: "en", flag: "us.svg", name: "English" },
+  en: { code: "en", flag: "us.svg", name: "English", isDefault: true },
   es: { code: "es", flag: "es.svg", name: "Español" },
   id: { code: "id", flag: "id.svg", name: "Bahasa Indonesia" },
   pt: { code: "pt", flag: "pt.svg", name: "Português" },
@@ -13,103 +13,102 @@ const languages = {
   tl: { code: "tl", flag: "ph.svg", name: "Filipino" },
 };
 
-// Inisialisasi Google Translate
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: "en",
-      includedLanguages: Object.keys(languages).join(","),
-      autoDisplay: false,
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    },
-    "google_translate_element"
-  );
+let currentLanguage = "en";
+let translations = {};
 
-  // Sembunyikan widget asli Google
-  const style = document.createElement("style");
-  style.textContent = `
-    .goog-te-combo, .goog-te-banner-frame, .skiptranslate { 
-      display: none !important; 
-    }
-    body { top: 0 !important; }
-  `;
-  document.head.appendChild(style);
-}
+// Load terjemahan HANYA untuk bahasa non-Inggris
+async function loadTranslations(lang) {
+  if (languages[lang]?.isDefault) return; // Skip loading untuk bahasa Inggris
 
-// Load Script Google Translate
-function loadGoogleTranslate() {
-  if (!document.querySelector('script[src*="translate.google.com"]')) {
-    const script = document.createElement("script");
-    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.body.appendChild(script);
+  try {
+    const response = await fetch(`public/locales/${lang}/translation.json`);
+    translations[lang] = await response.json();
+    applyTranslations(lang);
+  } catch (error) {
+    console.error(`Failed to load ${lang} translations:`, error);
   }
 }
 
-// Fungsi Ganti Bahasa
-function changeLanguage(lang) {
+// Terapkan terjemahan atau reset ke default
+function applyTranslations(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+
+    // Jika bahasa Inggris, kembalikan ke teks default dari HTML
+    if (languages[lang]?.isDefault) {
+      el.textContent = el.dataset.defaultText || el.textContent;
+    }
+    // Jika bahasa lain, gunakan terjemahan
+    else if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+
+    // Support dot notation (e.g., "privacy.p1")
+    const value = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]);
+    if (value) {
+      el.textContent = value;
+    }
+  });
+
+  updateLanguageDropdown(lang);
+}
+
+// Update dropdown bahasa
+function updateLanguageDropdown(lang) {
+  const currentFlag = document.getElementById("current-flag");
+  const currentLangName = document.getElementById("current-lang-name");
+
+  if (currentFlag && languages[lang]) {
+    currentFlag.src = `assets/img/flags/${languages[lang].flag}`;
+  }
+  if (currentLangName && languages[lang]) {
+    currentLangName.textContent = languages[lang].name;
+  }
+}
+
+// Ganti bahasa
+export function setLanguage(lang) {
   if (!languages[lang]) return;
 
-  // Update UI
-  const flagImg = document.getElementById("current-flag");
-  if (flagImg) {
-    flagImg.src = `assets/img/flags/${languages[lang].flag}`;
-    flagImg.alt = languages[lang].name;
+  currentLanguage = lang;
+
+  // Jika bahasa Inggris, reset ke konten default tanpa load JSON
+  if (languages[lang].isDefault) {
+    applyTranslations(lang);
+    translations = {}; // Kosongkan cache terjemahan
+  }
+  // Jika bahasa lain, load terjemahan
+  else {
+    loadTranslations(lang);
   }
 
-  // Trigger Google Translate
-  const googleSelect = document.querySelector(".goog-te-combo");
-  if (googleSelect) {
-    googleSelect.value = lang;
-    googleSelect.dispatchEvent(new Event("change"));
-  } else {
-    console.log("Google Translate belum siap, mencoba lagi...");
-    setTimeout(() => changeLanguage(lang), 300);
-  }
-
-  document.getElementById("language-dropdown")?.classList.add("hidden");
+  localStorage.setItem("preferredLanguage", lang);
 }
 
-// Event Listeners
-document.addEventListener("DOMContentLoaded", function () {
-  loadGoogleTranslate();
-
-  // Toggle Dropdown
-  document.getElementById("language-toggle")?.addEventListener("click", function (e) {
-    e.stopPropagation();
-    document.getElementById("language-dropdown")?.classList.toggle("hidden");
+// Inisialisasi
+document.addEventListener("DOMContentLoaded", () => {
+  // Simpan teks default ke atribut data-default-text
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.dataset.defaultText = el.textContent;
   });
 
-  // Tutup dropdown saat klik di luar
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest("#language-selector")) {
-      document.getElementById("language-dropdown")?.classList.add("hidden");
-    }
+  // Set bahasa awal
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+  setLanguage(savedLang);
+
+  // Event listener untuk dropdown (tetap sama)
+  document.getElementById("language-toggle")?.addEventListener("click", () => {
+    document.getElementById("language-dropdown").classList.toggle("hidden");
   });
 
-  // Handle pemilihan bahasa
-  document.querySelectorAll("[data-lang]").forEach((item) => {
-    item.addEventListener("click", function (e) {
-      e.preventDefault();
-      const lang = this.getAttribute("data-lang");
-      changeLanguage(lang);
+  const langButtons = document.querySelectorAll("[data-lang]");
+  langButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const lang = e.currentTarget.getAttribute("data-lang");
+      setLanguage(lang);
+      document.getElementById("language-dropdown").classList.add("hidden");
     });
   });
-
-  // Set bahasa default
-  if (!localStorage.getItem("preferredLang")) {
-    const userLang = navigator.language.substring(0, 2);
-    if (languages[userLang]) {
-      changeLanguage(userLang);
-    }
-  }
-});
-
-// Simpan preferensi bahasa
-window.addEventListener("beforeunload", function () {
-  const currentFlag = document.getElementById("current-flag")?.src;
-  if (currentFlag) {
-    const lang = Object.keys(languages).find((key) => currentFlag.includes(languages[key].flag));
-    if (lang) localStorage.setItem("preferredLang", lang);
-  }
 });

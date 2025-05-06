@@ -1,0 +1,73 @@
+{
+  "welcome": "Kirimkan proyek minecraft Anda-kami akan membawanya ke pasar",
+  "subtitle": "Mitra resmi. Proses yang sederhana. Kolaborasi yang adil.",
+  "about": "Tentang Heropixel Games",
+  "how_it_works": "HOW IT WORKS",
+  "portfolio": "PORTFOLIO",
+  "apply_now": "Apply Now",
+
+  "privacy": {
+    "p1": "Catatan umum dan informasi wajib",
+    "p2": "Penunjukan badan yang bertanggung jawab",
+    "p3": "Tempat yang bertanggung jawab atas pemrosesan data di situs web ini adalah:",
+    "p4": "Badan yang bertanggung jawab memutuskan sendiri atau bersama-sama dengan pihak lain mengenai tujuan dan cara memproses data pribadi (misalnya nama, detail kontak, dll.)",
+    "p5": "Pencabutan persetujuan Anda untuk pemrosesan data",
+    "p6": "Hanya dengan persetujuan Anda, beberapa operasi pemrosesan data dapat dilakukan. Anda dapat mencabut persetujuan yang telah Anda berikan kapan saja. Pemberitahuan informal melalui email sudah cukup untuk pencabutan tersebut. Legalitas pemrosesan data yang dilakukan hingga pencabutan tetap tidak terpengaruh oleh pencabutan tersebut.",
+    "p7": "Hak untuk mengajukan banding kepada otoritas pengawas yang berwenang",
+    "p8": "Sebagai subjek data, Anda memiliki hak untuk mengajukan keluhan kepada otoritas pengawas yang berwenang jika terjadi pelanggaran hukum perlindungan data. Otoritas pengawas yang kompeten terkait dengan masalah perlindungan data adalah Komisaris Perlindungan Data Negara bagian di negara federal tempat perusahaan kami berada. Tautan berikut ini menyediakan daftar petugas perlindungan data dan detail kontak mereka:",
+    "p9": "Hak atas transferabilitas data",
+    "p10": "Anda memiliki hak untuk memiliki data, yang kami proses secara otomatis atas dasar persetujuan Anda atau untuk memenuhi kontrak, yang diserahkan kepada Anda atau pihak ketiga. Data akan diberikan dalam format yang dapat dibaca oleh mesin. Jika Anda meminta transfer data secara langsung ke pihak lain yang bertanggung jawab, hal ini hanya akan dilakukan sejauh hal tersebut dapat dilakukan secara teknis",
+    "p11": "Hak atas informasi, koreksi, pemblokiran, penghapusan",
+    "p12": "Dalam kerangka ketentuan hukum yang berlaku, Anda memiliki hak untuk mendapatkan informasi secara gratis kapan saja tentang data pribadi Anda yang tersimpan, asal data, penerimanya, dan tujuan pemrosesan data, serta, jika berlaku, hak untuk mengoreksi, memblokir, atau menghapus data ini. Dalam hal ini dan juga untuk pertanyaan lebih lanjut tentang masalah data pribadi, Anda dapat menghubungi kami kapan saja menggunakan opsi kontak yang tercantum dalam cetakan.",
+    "p13": "Enkripsi SSL atau TLS",
+    "p14": "Untuk alasan keamanan dan untuk melindungi pengiriman konten rahasia yang Anda kirimkan kepada kami sebagai operator situs, situs web kami menggunakan enkripsi SSL atau TLS. Ini berarti bahwa data yang Anda kirimkan melalui situs web ini tidak dapat dibaca oleh pihak ketiga. Anda dapat mengenali koneksi terenkripsi dari baris alamat 'https://' pada browser Anda dan simbol gembok pada baris browser.",
+    "p15": "File log server",
+    "p16": "Dalam file log server, penyedia situs web secara otomatis mengumpulkan dan menyimpan informasi yang secara otomatis dikirimkan oleh browser Anda kepada kami. Informasi tersebut adalah:",
+    "p17": "Data ini tidak digabungkan dengan sumber data lain. Dasar untuk pemrosesan data adalah Art. 6 paragraf. 1 lit. b DSGVO, yang mengizinkan pemrosesan data untuk pemenuhan kontrak atau tindakan pra-kontrak.",
+    "p18": "Formulir kontak",
+    "p19": "Data yang dikirimkan melalui formulir kontak akan disimpan, termasuk data kontak Anda, agar dapat memproses pertanyaan Anda atau tersedia untuk pertanyaan lanjutan. Data ini tidak akan diteruskan tanpa persetujuan Anda.",
+    "p20": "Cookies",
+    "p21": "Situs web kami menggunakan cookie. Ini adalah file teks kecil yang disimpan oleh browser web Anda di perangkat akhir Anda. Cookie membantu kami membuat penawaran kami lebih ramah pengguna, efektif, dan lebih aman.",
+    "p22": "Google Analytics",
+    "p23": "Situs web kami menggunakan fungsi layanan analisis web Google Analytics. Penyedia layanan analisis web adalah Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, AS.",
+    "p24": "",
+    "p25": "Penyedia Pembayaran",
+    "p26": "Situs web kami memungkinkan pembayaran melalui PayPal dan Sofortüberweisung. Data pembayaran diproses oleh penyedia layanan ini sesuai dengan kebijakan privasi mereka.",
+    "p27": "Plugin Twitter",
+    "p28": "Situs web kami menggunakan fungsi-fungsi layanan Twitter. Saat menggunakan Twitter dan fungsi “Re-Tweet”, situs web yang Anda kunjungi akan ditautkan ke akun Twitter Anda.",
+    "l1": "Halaman yang dikunjungi di domain kami",
+    "l2": "Tanggal dan waktu permintaan server",
+    "l3": "Jenis dan versi browser",
+    "l4": "Sistem operasi yang digunakan",
+    "l5": "URL Perujuk",
+    "l6": "Nama host dari komputer yang mengakses",
+    "l7": "IP Address"
+  },
+
+  "imprint": {
+    "generalInfo": {
+      "title": "Informasi yang diberikan sesuai dengan § 5 TMG (Undang-Undang Telemedia Jerman):",
+      "authorized": "Perwakilan resmi:",
+      "contact": "Kontak"
+    },
+    "discalimer": {
+      "title": "Penafian tanggung jawab:",
+      "liabilityForContent": {
+        "title": "Tanggung jawab untuk konten",
+        "content": "Isi halaman kami dibuat dengan sangat hati-hati. Namun, kami tidak dapat menjamin bahwa isinya benar, lengkap, dan terkini. Sebagai penyedia layanan, kami bertanggung jawab atas konten kami sendiri di halaman-halaman ini sesuai dengan § 7 paragraf 1 TMG (Undang-Undang Telemedia Jerman) dan undang-undang umum. Menurut §§ 8 hingga 10 TMG, kami tidak berkewajiban untuk memantau informasi yang dikirim atau disimpan dari pihak ketiga atau untuk menyelidiki keadaan yang mengindikasikan aktivitas ilegal. Kewajiban untuk menghapus atau memblokir penggunaan informasi menurut undang-undang umum tetap tidak terpengaruh oleh hal ini. Namun, tanggung jawab dalam hal ini hanya dapat dilakukan sejak kami mengetahui adanya pelanggaran hukum. Jika kami mengetahui adanya pelanggaran hukum semacam itu, kami akan segera menghapus konten yang dimaksud."
+      },
+      "liabilityForLinks": {
+        "title": "Tanggung jawab atas tautan",
+        "content": "Penawaran kami berisi tautan ke situs web eksternal pihak ketiga, yang isinya tidak dapat kami pengaruhi. Oleh karena itu, kami tidak bertanggung jawab atas konten eksternal tersebut. Penyedia atau operator masing-masing situs selalu bertanggung jawab atas konten situs yang ditautkan. Halaman yang ditautkan telah diperiksa untuk kemungkinan pelanggaran hukum pada saat menautkan. Konten ilegal tidak teridentifikasi pada saat penautan. Namun, kontrol permanen atas konten halaman yang ditautkan tidak masuk akal tanpa bukti konkret pelanggaran hukum. Jika kami mengetahui adanya pelanggaran, kami akan segera menghapus tautan tersebut."
+      },
+      "copyrights": {
+        "title": "Hak Cipta",
+        "content": "Konten dan karya pada halaman-halaman ini yang dibuat oleh operator situs tunduk pada hukum hak cipta Jerman. Reproduksi, pengeditan, distribusi, dan segala jenis penggunaan di luar batas undang-undang hak cipta memerlukan persetujuan tertulis dari penulis atau pencipta yang bersangkutan. Pengunduhan dan salinan halaman-halaman ini hanya diizinkan untuk penggunaan pribadi dan non-komersial. Sejauh konten di situs ini tidak dibuat oleh operator, hak cipta pihak ketiga dipatuhi. Secara khusus, konten pihak ketiga diidentifikasi seperti itu. Jika Anda mengetahui adanya pelanggaran hak cipta, mohon informasikan kepada kami. Jika kami mengetahui adanya pelanggaran, kami akan segera menghapus konten tersebut."
+      },
+      "dataProtection": {
+        "title": "Perlindungan data",
+        "content": "Penggunaan situs web kami biasanya dapat dilakukan tanpa memberikan data pribadi. Sejauh data pribadi (misalnya nama, alamat, atau alamat email) dikumpulkan di situs web kami, hal ini selalu dilakukan secara sukarela, sejauh mungkin. Data ini tidak akan diberikan kepada pihak ketiga tanpa persetujuan Anda. Kami ingin menunjukkan bahwa transmisi data melalui Internet (misalnya komunikasi melalui email) dapat memiliki celah keamanan. Perlindungan data secara menyeluruh terhadap akses oleh pihak ketiga tidak mungkin dilakukan. Penggunaan data kontak yang dipublikasikan oleh pihak ketiga dalam kerangka kewajiban pencantuman untuk tujuan pengiriman iklan dan materi informasi yang tidak diminta secara tegas dengan ini secara tegas dilarang. Operator halaman secara tegas berhak untuk mengambil tindakan hukum jika terjadi pengiriman informasi iklan yang tidak diminta, misalnya melalui email spam."
+      }
+    }
+  }
+}
