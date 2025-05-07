@@ -2220,7 +2220,12 @@ video {
 
 .bg-\[\#d44500\] {
   --tw-bg-opacity: 1;
-  bg-color: rgb(255 98 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 98 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#aa4400\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 68 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#000000\] {
