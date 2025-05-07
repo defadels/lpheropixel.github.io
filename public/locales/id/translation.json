@@ -1,10 +1,75 @@
 {
-  "welcome": "Kirimkan proyek minecraft Anda-kami akan membawanya ke pasar",
-  "subtitle": "Mitra resmi. Proses yang sederhana. Kolaborasi yang adil.",
-  "about": "Tentang Heropixel Games",
-  "how_it_works": "HOW IT WORKS",
-  "portfolio": "PORTFOLIO",
-  "apply_now": "Apply Now",
+  "home": {
+    "navbar": {
+      "index": "Beranda",
+      "about": "Tentang Kami",
+      "portfolio": "Portfolio",
+      "howItWorks": "Cara Kerja",
+      "apply": "Daftar Sekarang"
+    },
+    "section": {
+      "fluid": {
+        "title": "Kirimkan proyek minecraft Anda - kami akan membawanya ke pasar.",
+        "content": "Mitra resmi. Proses yang sederhana. Kolaborasi yang adil",
+        "apply": "Daftar Sekarang"
+      },
+      "about": {
+        "title": "Tentang Herpixel Games",
+        "content": "Heropixel Games adalah mitra resmi Minecraft Marketplace. Kami telah menerbitkan lebih dari 50 proyek di seluruh dunia dan membantu para kreator mewujudkan ide mereka secara profesional.",
+        "check": {
+          "verified": "Mitra Terverifikasi",
+          "experience": "Pengalaman & Kualitas",
+          "fair": "Pebayaran di Muka yang Adil"
+        }
+      },
+      "how": {
+        "title": "Bagaimana Cara Kerja",
+        "submit": {
+          "title": "1. Kirim",
+          "content": "Isi formulir dan bagikan ide Anda kepada kami."
+        },
+        "review": {
+          "title": "2. Tinjauan & Umpan Balik",
+          "content": "Kami meninjau proyek Anda dan memberikan umpan balik yang jujur."
+        },
+        "publish": {
+          "title": "3. Publikasikan Bersama",
+          "content": "Kami akan membantu Anda menerbitkannya di Minecraft Marketplace, secara resmi."
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "content": "Lihatlah proyek-proyek Heropixel Games. Klik pada masing-masing gambar untuk mendapatkan informasi tentang proyek tersebut.",
+        "games": {
+          "4BitCraft": {
+            "description": "Ubah Minecraft Anda menjadi permainan yang sangat lucu! Semuanya tampak kecil: setiap blok, setiap gerombolan, setiap pohon <br><br> + Paket 4x4 super imut <br>+ Blok 4x4, item, massa, dan lainnya <br>+ Setia pada tekstur vanila <br>+ 1.20 Paket Sumber Daya "
+          },
+          "MoreAllays": {
+            "description": "Mulailah petualangan bertahan hidup Minecraft Anda! Banyak Allay baru yang menanti Anda: Enderman Allay, Axolotl Allay, Warden Allay, dan masih banyak lagi! Bebaskan mereka dari ruang bawah tanah dan kuil. Jinakkan mereka dan mereka akan menjadi hewan peliharaan setia Anda! <br><br> + 16 cute Allays added! <br> + Allay Dungeons & Temples <br> + 10 skin Allay disertakan <br> + Multiplayer & ramah pemain tunggal"
+          },
+          "GiantTNT": {
+            "description": "Apakah Anda membutuhkan yang paling ekstrem? TNT ini tidak hanya menghancurkan pangkalan, tetapi juga seluruh desa dan kota besar. Bersenang-senanglah dengan mereka! <br><br>+ Lebih dari 40 TNT Raksasa yang berbeda <br>+ Kehancuran dan ledakan maksimum <br>+ Tornado, meteor, 5.000x dan lebih banyak TNT! <br><br>++ Gunakan di dunia Anda! <br>++ Multiplayer friendly! <br>"
+          },
+          "ZombieBunker": {
+            "description": "Lindungi teman dan dirimu sendiri dari Kiamat Zombie di markas keamanan tinggi! Bunker bawah tanah Anda memiliki semua yang Anda butuhkan untuk bertahan hidup. Tekan tombol dan aktifkan dinding anti-zombie! <br><br>+ Dinding pengaman yang dapat diaktifkan <br>+ Bunker rahasia <br>+ Pangkalan yang aman <br>+ Kiamat zombie <br>+ Zombie khusus <br>++ Multipemain dan pemain tunggal"
+          },
+          "MoreCreepers": {
+            "description": "BOOOM! Tambahkan lebih banyak Creepers unik ke proyek dunia atau alam Anda.<br><br>+ 10 Creeper pamungkas <br>+ Ledakan luar biasa <br>+ Kumpulkan kepala creeper <br><br>++ Gunakan di DUNIA ANDA! ++"
+          }
+        }
+      },
+      "form": {
+        "title": "Formulir Pendaftaran",
+        "placeholder": {
+          "name": "Nama/Nama Tim",
+          "email": "Kontak Email",
+          "description": "Deskripsi Singkat Proyek"
+        },
+        "checkbox": "Saya menyetujui data saya disimpan untuk tujuan komunikasi.",
+        "button": "Kirim Proyek"
+      }
+    }
+  },
 
   "privacy": {
     "p1": "Catatan umum dan informasi wajib",

@@ -2,6 +2,7 @@
 // import { initLanguageSwitcher } from "./translate";
 // document.addEventListener("DOMContentLoaded", initLanguageSwitcher);
 
+import { applyTranslations, currentLanguage } from "./translate.js";
 // -------------- Toggle Button --------------
 const navMenu = document.getElementById("nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -37,6 +38,7 @@ const portfolioItems = [
   {
     id: 1,
     title: "4Bit Craft",
+    slug: "4BitCraft",
     date: "14 February 2023",
     image: [
       "assets/img/4bit_craft.jpeg",
@@ -56,6 +58,7 @@ const portfolioItems = [
   {
     id: 2,
     title: "More Allays",
+    slug: "MoreAllays",
     date: "24 January 2023",
     image: [
       "assets/img/more_allays.jpeg",
@@ -71,6 +74,7 @@ const portfolioItems = [
   {
     id: 3,
     title: "Giant TNT",
+    slug: "GiantTNT",
     date: "17 February 2025",
     image: [
       "assets/img/giant_tnt.jpg",
@@ -91,6 +95,7 @@ const portfolioItems = [
   {
     id: 4,
     title: "Pastel Paradise",
+    slug: "PastelParadise",
     date: "10 September 2024",
     image: [
       "assets/img/pastelparadise.jpg",
@@ -111,6 +116,7 @@ const portfolioItems = [
   {
     id: 5,
     title: "Zombie Bunker",
+    slug: "ZombieBunker",
     date: "19 July 2022",
     image: [
       "assets/img/zombie_bunker.jpg",
@@ -126,6 +132,7 @@ const portfolioItems = [
   {
     id: 6,
     title: "More Creepers",
+    slug: "MoreCreepers",
     date: "8 October 2024",
     image: [
       "assets/img/more_creepers.jpg",
@@ -189,15 +196,20 @@ document.addEventListener("DOMContentLoaded", function () {
             </button>
             <div class="indicator-container flex justify-center mt-2"></div>
           </div>
-          <p class="text-sm text-start text-[#A5A5A5] mb-6 mt-4">${item.description}</p>
+          <p data-i18n="home.section.portfolio.games.${item.slug}.description" class="text-sm text-start text-[#A5A5A5] mb-6 mt-4">${item.description}</p>
         `;
 
         initSlider();
+        setTimeout(() => {
+          applyTranslations(currentLanguage);
+        }, 0); // Gunakan setTimeout untuk memastikan render selesai
 
         modal.classList.remove("hidden");
         document.body.style.overflow = "hidden";
         setTimeout(() => {
           modal.classList.add("show");
+
+          // applyTranslations(currentLanguage);
         }, 10);
       }
     });

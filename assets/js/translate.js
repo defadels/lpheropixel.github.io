@@ -38,7 +38,9 @@ function applyTranslations(lang) {
 
     // Jika bahasa Inggris, kembalikan ke teks default dari HTML
     if (languages[lang]?.isDefault) {
-      el.textContent = el.dataset.defaultText || el.textContent;
+      // el.textContent = el.dataset.defaultText || el.textContent;
+      el.innerHTML = el.dataset.defaultText || el.textContent;
+      return;
     }
     // Jika bahasa lain, gunakan terjemahan
     else if (translations[lang] && translations[lang][key]) {
@@ -48,7 +50,16 @@ function applyTranslations(lang) {
     // Support dot notation (e.g., "privacy.p1")
     const value = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]);
     if (value) {
-      el.textContent = value;
+      el.innerHTML = value;
+    }
+
+    if (value) {
+      // Terjemahkan konten biasa atau placeholder
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.placeholder = value; // Terapkan ke placeholder
+      } else {
+        el.innerHTML = value; // Terapkan ke konten HTML
+      }
     }
   });
 
@@ -112,3 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// 2. Export fungsi di akhir file
+export { applyTranslations, currentLanguage };
