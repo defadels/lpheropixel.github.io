@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateIndicator() {
       const boxes = indicatorContainer.querySelectorAll(".indicator-box");
       boxes.forEach((box, index) => {
-        box.style.backgroundColor = index === currentIndex ? "#d44500" : "gray";
+        box.style.backgroundColor = index === currentIndex ? "#ff6100" : "gray";
       });
     }
   }
