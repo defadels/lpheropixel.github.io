@@ -1,0 +1,138 @@
+{
+  "home": {
+    "navbar": {
+      "index": "Pahina ng Tahanan",
+      "about": "Tungkol sa Amin",
+      "portfolio": "Portfolio",
+      "howItWorks": "Paano Gumagana",
+      "apply": "Mag-apply Ngayon"
+    },
+    "section": {
+      "fluid": {
+        "title": "Ipasa ang iyong proyektong minecraft - dadalhin namin ito sa merkado.",
+        "content": "Opisyal na kasosyo. Simpleng proseso. Patas na kolaborasyon",
+        "apply": "Mag-apply Ngayon"
+      },
+      "about": {
+        "title": "Tungkol sa Herpixel Games",
+        "content": "Ang Heropixel Games ay isang opisyal na kasosyo ng Minecraft Marketplace. Nakapag-publish na kami ng higit sa 50 proyekto sa buong mundo at tumutulong sa mga creator na isagawa ang kanilang mga ideya sa propesyonal na paraan.",
+        "check": {
+          "verified": "Beripikadong Kasosyo",
+          "experience": "Karanasan at Kalidad",
+          "fair": "Patas na Advance Payment"
+        }
+      },
+      "how": {
+        "title": "Paano Gumagana",
+        "submit": {
+          "title": "1. Ipasa",
+          "content": "Punan ang form at ibahagi sa amin ang iyong ideya."
+        },
+        "review": {
+          "title": "2. Pagsusuri at Feedback",
+          "content": "Sinusuri namin ang iyong proyekto at nagbibigay ng tapat na feedback."
+        },
+        "publish": {
+          "title": "3. I-publish Nang Magkasama",
+          "content": "Tutulungan ka naming mai-publish ito sa Minecraft Marketplace, opisyal."
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "content": "Tingnan ang mga proyekto ng Heropixel Games. I-click ang bawat larawan para sa impormasyon tungkol sa proyekto.",
+        "games": {
+          "4BitCraft": {
+            "description": "Gawing super cute na laro ang iyong Minecraft! Lahat ay mukhang maliit: bawat block, bawat mob, bawat puno <br><br> + Super cute na 4x4 pack <br>+ 4x4 na mga block, items, mobs, at marami pa <br>+ Tapat sa vanilla textures <br>+ 1.20 Resource Pack "
+          },
+          "MoreAllays": {
+            "description": "Simulan ang iyong Minecraft survival adventure! Maraming bagong Allay ang naghihintay sa iyo: Enderman Allay, Axolotl Allay, Warden Allay, at marami pang iba! Palayain sila mula sa mga dungeon at templo. Pasukin sila at magiging tapat na mga alaga mo sila! <br><br> + 16 na cute na Allays ang idinagdag! <br> + Allay Dungeons at Temples <br> + 10 Allay skins ang kasama <br> + Multiplayer at single player friendly"
+          },
+          "GiantTNT": {
+            "description": "Kailangan mo ba ng pinaka-extreme? Ang mga TNT na ito ay hindi lamang sumisira sa iyong base, kundi sa buong mga nayon at malalaking lungsod. Magsaya kasama nila! <br><br>+ Higit sa 40 iba't ibang Giant TNTs <br>+ Maximum na pagkasira at pagsabog <br>+ Tornado, meteor, 5,000x at higit pang TNT! <br><br>++ Gamitin sa iyong MUNDO! <br>++ Multiplayer friendly! <br>"
+          },
+          "ZombieBunker": {
+            "description": "Protektahan ang iyong mga kaibigan at sarili mula sa Zombie Apocalypse sa isang high-security headquarters! Ang inyong underground bunker ay may lahat ng kailangan ninyo para mabuhay. Pindutin ang button at i-activate ang mga anti-zombie wall! <br><br>+ Mga naa-activate na security wall <br>+ Lihim na bunker <br>+ Secure base <br>+ Zombie apocalypse <br>+ Special zombies <br>++ Multiplayer at single player"
+          },
+          "MoreCreepers": {
+            "description": "BOOOM! Magdagdag ng mas maraming natatanging Creepers sa iyong world o nature project.<br><br>+ 10 Ultimate Creepers <br>+ Kahanga-hangang mga pagsabog <br>+ Kolektahin ang mga creeper head <br><br>++ Gamitin sa IYONG MUNDO! ++"
+          }
+        }
+      },
+      "form": {
+        "title": "Form ng Aplikasyon",
+        "placeholder": {
+          "name": "Pangalan/Pangalan ng Team",
+          "email": "Contact Email",
+          "description": "Maikling Paglalarawan ng Proyekto"
+        },
+        "checkbox": "Sumasang-ayon ako na ang aking data ay maitatago para sa layunin ng komunikasyon.",
+        "button": "Ipasa ang Proyekto"
+      }
+    }
+  },
+
+  "privacy": {
+    "p1": "Pangkalahatang paalala at kinakailangang impormasyon",
+    "p2": "Pagtatalaga ng responsableng entidad",
+    "p3": "Ang responsable para sa pagproseso ng data sa website na ito ay:",
+    "p4": "Ang responsableng entidad ay kusang nagpapasya o kasama ng ibang partido tungkol sa mga layunin at paraan ng pagproseso ng personal na data (halimbawa, mga pangalan, detalye ng contact, atbp.)",
+    "p5": "Pag-alis ng pahintulot mo sa pagproseso ng data",
+    "p6": "Ang ilang operasyon sa pagproseso ng data ay maaari lamang gawin sa pamamagitan ng iyong pahintulot. Maaari mong bawiin ang iyong pahintulot anumang oras. Ang hindi pormal na abiso sa email ay sapat na para sa pag-withdraw. Ang legalidad ng pagproseso ng data na ginawa hanggang sa pag-withdraw ay hindi apektado ng pag-withdraw.",
+    "p7": "Karapatan na umapela sa kinauukulang awtoridad sa pangangasiwa",
+    "p8": "Bilang data subject, mayroon kang karapatan na magsumite ng reklamo sa kinauukulang awtoridad sa pangangasiwa kung may paglabag sa batas sa proteksyon ng data. Ang awtoridad sa pangangasiwa na may kakayahan tungkol sa mga isyu sa proteksyon ng data ay ang State Data Protection Commissioner sa federal state kung saan matatagpuan ang aming kumpanya. Ang sumusunod na link ay nagbibigay ng listahan ng mga opisyal sa proteksyon ng data at ang kanilang mga detalye ng contact:",
+    "p9": "Karapatan sa pagiging madaling ilipat ng data",
+    "p10": "Mayroon kang karapatan na humiling na ang data na awtomatiko naming pinoproseso batay sa iyong pahintulot o upang matupad ang isang kontrata ay maibigay sa iyo o sa isang third party. Ibibigay ang data sa isang format na mababasa ng machine. Kung humiling ka ng direktang paglilipat ng data sa ibang responsible na partido, ito ay gagawin lamang kung teknikal na posible",
+    "p11": "Karapatan sa impormasyon, pagwawasto, pagharang, pagtanggal",
+    "p12": "Sa loob ng balangkas ng mga umiiral na legal na probisyon, mayroon kang karapatan na makatanggap ng libreng impormasyon anumang oras tungkol sa iyong personal na data na naka-imbak, ang pinagmulan ng data, ang mga tagatanggap, at ang layunin ng pagproseso ng data, at, kung naaangkop, isang karapatan na iwasto, harangan, o tanggalin ang data na ito. Sa bagay na ito at gayundin para sa karagdagang mga katanungan tungkol sa personal na data, maaari kang makipag-ugnayan sa amin anumang oras gamit ang mga opsyon sa contact na nakalista sa imprint.",
+    "p13": "SSL o TLS encryption",
+    "p14": "Para sa mga kadahilanang pangkaligtasan at upang maprotektahan ang paghahatid ng kumpidensyal na nilalaman na iyong ipinadala sa amin bilang operator ng site, ang aming website ay gumagamit ng SSL o TLS encryption. Nangangahulugan ito na ang data na iyong ipinadala sa pamamagitan ng website na ito ay hindi maaaring basahin ng mga third party. Makikilala mo ang isang encrypted na koneksyon mula sa 'https://' na address line sa iyong browser at ang lock symbol sa browser line.",
+    "p15": "Server log files",
+    "p16": "Sa mga server log file, awtomatikong kinokolekta at iniimbak ng provider ng website ang impormasyon na awtomatikong ipinapadala ng iyong browser sa amin. Ang mga ito ay:",
+    "p17": "Ang data na ito ay hindi pinagsasama-sama sa iba pang mga mapagkukunan ng data. Ang batayan para sa pagproseso ng data ay Pang-arte. 6 par. 1 lit. b DSGVO, na nagbibigay-daan sa pagproseso ng data para sa katuparan ng kontrata o pre-contractual na mga hakbang.",
+    "p18": "Contact form",
+    "p19": "Ang data na ipinadala sa pamamagitan ng contact form ay maiimbak, kasama na ang iyong contact information, upang maproseso ang iyong katanungan o para sa mga susunod na katanungan. Hindi ipapasa ang data na ito nang walang iyong pahintulot.",
+    "p20": "Cookies",
+    "p21": "Ang aming website ay gumagamit ng cookies. Ito ay maliliit na text file na iniimbak ng iyong web browser sa iyong terminal device. Ang cookies ay tumutulong sa amin na gawing mas user-friendly, mas epektibo, at mas ligtas ang aming alok.",
+    "p22": "Google Analytics",
+    "p23": "Ang aming website ay gumagamit ng mga function ng Google Analytics web analytics service. Ang provider ng web analytics service ay Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+    "p24": "",
+    "p25": "Payment Provider",
+    "p26": "Ang aming website ay nagbibigay-daan sa pagbabayad sa pamamagitan ng PayPal at Sofortüberweisung. Ang data ng pagbabayad ay pinoproseso ng mga service provider na ito alinsunod sa kanilang mga patakaran sa privacy.",
+    "p27": "Twitter Plugin",
+    "p28": "Ang aming website ay gumagamit ng mga function ng Twitter service. Kapag gumagamit ng Twitter at ang function na \"Re-Tweet\", ang mga website na iyong binisita ay iuugnay sa iyong Twitter account.",
+    "l1": "Mga pahinang binisita sa aming domain",
+    "l2": "Petsa at oras ng server request",
+    "l3": "Uri at bersyon ng browser",
+    "l4": "Ang operating system na ginamit",
+    "l5": "Referrer URL",
+    "l6": "Hostname ng computer na nag-access",
+    "l7": "IP Address"
+  },
+
+  "imprint": {
+    "generalInfo": {
+      "title": "Impormasyong ibinigay alinsunod sa § 5 TMG (German Telemedia Act):",
+      "authorized": "Awtorisadong kinatawan:",
+      "contact": "Contact"
+    },
+    "discalimer": {
+      "title": "Disclaimer ng pananagutan:",
+      "liabilityForContent": {
+        "title": "Pananagutan para sa nilalaman",
+        "content": "Ang nilalaman ng aming mga pahina ay ginawa nang may malaking pag-iingat. Gayunpaman, hindi namin magagarantiya na ang nilalaman ay tama, kumpleto, at napapanahon. Bilang isang service provider, kami ay responsable para sa aming sariling nilalaman sa mga pahinang ito alinsunod sa § 7 par. 1 TMG (German Telemedia Act) at pangkalahatang batas. Ayon sa §§ 8 hanggang 10 TMG, wala kaming obligasyon na subaybayan ang ipinadala o naka-store na impormasyon mula sa third party o imbestigahan ang mga kalagayan na nagpapahiwatig ng ilegal na aktibidad. Ang mga obligasyon na alisin o harangan ang paggamit ng impormasyon sa ilalim ng pangkalahatang batas ay hindi naaapektuhan nito. Gayunpaman, ang pananagutan sa aspetong ito ay maaari lamang simulan mula sa oras na nalaman ang tungkol sa isang partikular na paglabag sa batas. Kung kami ay malaman tungkol sa nasabing mga paglabag sa batas, aalisin namin kaagad ang mga nasabing nilalaman."
+      },
+      "liabilityForLinks": {
+        "title": "Pananagutan para sa mga link",
+        "content": "Ang aming alok ay naglalaman ng mga link sa mga eksternal na website ng third party, na ang nilalaman ay hindi namin maimpluwensyahan. Samakatuwid, hindi kami maaaring gumawa ng anumang warranty para sa mga panlabas na nilalaman na ito. Ang provider o operator ng mga naka-link na site ay palaging responsable para sa nilalaman ng mga naka-link na site. Ang mga naka-link na pahina ay sinuri para sa posibleng mga paglabag sa batas sa oras ng pag-link. Walang nakilalang ilegal na nilalaman sa oras ng pag-link. Gayunpaman, ang permanenteng pagkontrol ng nilalaman ng mga naka-link na pahina ay hindi makatwiran nang walang konkretong ebidensya ng paglabag sa batas. Kung kami ay malaman tungkol sa mga paglabag, aalisin namin kaagad ang mga naturang link."
+      },
+      "copyrights": {
+        "title": "Copyright",
+        "content": "Ang nilalaman at mga gawa sa mga pahinang ito na ginawa ng operator ng site ay napapailalim sa German copyright law. Ang paggaya, pagproseso, pamamahagi, at anumang uri ng paggamit na lampas sa mga limitasyon ng copyright law ay nangangailangan ng nakasulat na pahintulot ng may-akda o tagalikha. Ang mga pag-download at kopya ng pahinang ito ay pinapayagan lamang para sa personal at hindi pangkomersyal na paggamit. Hangga't ang nilalaman sa site na ito ay hindi ginawa ng operator, iginagalang ang mga copyright ng third party. Sa partikular, ang mga nilalaman ng third party ay minarkahan bilang ganito. Kung sa kabila nito ay magkakaroon ka ng kamalayan sa isang paglabag sa copyright, pakiabisuhan kami. Kung malaman namin ang tungkol sa mga paglabag, tatanggalin namin kaagad ang nasabing nilalaman."
+      },
+      "dataProtection": {
+        "title": "Proteksyon ng data",
+        "content": "Ang paggamit ng aming website ay karaniwang posible nang walang pagbibigay ng personal na data. Hangga't ang personal na data (halimbawa, pangalan, address, o email address) ay nangongolekta sa aming website, ito ay palaging ginagawa nang kusang-loob, hangga't maaari. Hindi ipapasa ang data na ito sa mga third party nang walang iyong tahasang pahintulot. Gusto naming bigyang-diin na ang paghahatid ng data sa internet (halimbawa, komunikasyon sa pamamagitan ng email) ay maaaring may mga security gap. Hindi posible ang kumpletong proteksyon ng data laban sa pag-access ng mga third party. Ang paggamit ng mga contact data na inilathala ng mga third party sa loob ng balangkas ng obligasyon sa imprint para sa layunin ng pagpapadala ng hindi hininging advertising at impormasyong materyal ay tahasang ipinagbabawal. Ang mga operator ng pahina ay tahasang nagpapahintulot sa kanilang sarili na gumawa ng legal na hakbang sa kaso ng hindi hininging paghahatid ng impormasyong pang-advertise, tulad ng spam email."
+      }
+    }
+  }
+}

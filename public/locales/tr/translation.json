@@ -1,0 +1,138 @@
+{
+  "home": {
+    "navbar": {
+      "index": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "portfolio": "Portfolyo",
+      "howItWorks": "Nasıl Çalışır",
+      "apply": "Şimdi Başvur"
+    },
+    "section": {
+      "fluid": {
+        "title": "Minecraft projenizi gönderin - biz onu pazara taşıyacağız.",
+        "content": "Resmi ortak. Basit süreç. Adil işbirliği",
+        "apply": "Şimdi Başvur"
+      },
+      "about": {
+        "title": "Herpixel Games Hakkında",
+        "content": "Heropixel Games, Minecraft Marketplace'in resmi bir ortağıdır. Dünya çapında 50'den fazla proje yayınladık ve yaratıcılara fikirlerini profesyonel olarak hayata geçirmelerine yardımcı olduk.",
+        "check": {
+          "verified": "Doğrulanmış Ortak",
+          "experience": "Deneyim & Kalite",
+          "fair": "Adil Ön Ödeme"
+        }
+      },
+      "how": {
+        "title": "Nasıl Çalışır",
+        "submit": {
+          "title": "1. Gönder",
+          "content": "Formu doldurun ve fikrinizi bizimle paylaşın."
+        },
+        "review": {
+          "title": "2. İnceleme & Geribildirim",
+          "content": "Projenizi inceliyoruz ve dürüst geribildirim sağlıyoruz."
+        },
+        "publish": {
+          "title": "3. Birlikte Yayınlayın",
+          "content": "Minecraft Marketplace'de resmi olarak yayınlamanıza yardımcı olacağız."
+        }
+      },
+      "portfolio": {
+        "title": "Portfolyo",
+        "content": "Heropixel Games projelerine bir göz atın. Her bir görüntüye tıklayarak proje hakkında bilgi alabilirsiniz.",
+        "games": {
+          "4BitCraft": {
+            "description": "Minecraft'ınızı süper sevimli bir oyuna dönüştürün! Her şey küçük görünüyor: her blok, her mob, her ağaç <br><br> + Süper sevimli 4x4 paket <br>+ 4x4 bloklar, eşyalar, moblar ve daha fazlası <br>+ Orijinal dokularına sadık <br>+ 1.20 Kaynak Paketi"
+          },
+          "MoreAllays": {
+            "description": "Minecraft hayatta kalma maceranıza başlayın! Sizi bekleyen birçok yeni Allay var: Enderman Allay, Axolotl Allay, Warden Allay ve daha fazlası! Onları zindanlardan ve tapınaklardan kurtarın. Evcilleştirin ve sadık evcil hayvanlarınız olacaklar! <br><br> + 16 sevimli Allay eklendi! <br> + Allay Zindanları & Tapınakları <br> + 10 Allay görünümü dahil <br> + Çok oyunculu & tek oyuncuya uygun"
+          },
+          "GiantTNT": {
+            "description": "En aşırısına mı ihtiyacınız var? Bu TNT'ler sadece üslerinizi değil, tüm köyleri ve büyük şehirleri de yok eder. Onlarla eğlenin! <br><br>+ 40'tan fazla farklı Dev TNT <br>+ Maksimum yıkım ve patlama <br>+ Tornado, meteor, 5.000x ve daha fazla TNT! <br><br>++ Kendi dünyanızda kullanın! <br>++ Çok oyuncuya uygun! <br>"
+          },
+          "ZombieBunker": {
+            "description": "Arkadaşlarınızı ve kendinizi yüksek güvenlikli bir karargahta Zombi Kıyametinden koruyun! Yeraltı sığınağınızda hayatta kalmak için ihtiyacınız olan her şey var. Düğmeye basın ve zombi karşıtı duvarları etkinleştirin! <br><br>+ Etkinleştirilebilir güvenlik duvarları <br>+ Gizli sığınak <br>+ Güvenli üs <br>+ Zombi kıyameti <br>+ Özel zombiler <br>++ Çok oyunculu ve tek oyuncuya uygun"
+          },
+          "MoreCreepers": {
+            "description": "BOOOM! Dünya veya doğa projenize daha benzersiz Creeper'lar ekleyin.<br><br>+ 10 Nihai Creeper <br>+ Olağanüstü patlamalar <br>+ Creeper kafalarını toplayın <br><br>++ KENDİ DÜNYANIZDA kullanın! ++"
+          }
+        }
+      },
+      "form": {
+        "title": "Başvuru Formu",
+        "placeholder": {
+          "name": "İsim/Takım Adı",
+          "email": "İletişim E-postası",
+          "description": "Projenin Kısa Açıklaması"
+        },
+        "checkbox": "Verilerimin iletişim amaçlı saklanmasını kabul ediyorum.",
+        "button": "Proje Gönder"
+      }
+    }
+  },
+
+  "privacy": {
+    "p1": "Genel notlar ve zorunlu bilgiler",
+    "p2": "Sorumlu kuruluşun belirlenmesi",
+    "p3": "Bu web sitesindeki veri işlemeden sorumlu yer:",
+    "p4": "Sorumlu kuruluş, kişisel verilerin (örneğin isimler, iletişim bilgileri vb.) işlenmesinin amaçları ve yöntemleri hakkında tek başına veya başkalarıyla birlikte karar verir.",
+    "p5": "Veri işleme için verdiğiniz izni geri çekme",
+    "p6": "Bazı veri işleme işlemleri yalnızca sizin izninizle gerçekleştirilebilir. Vermiş olduğunuz izni istediğiniz zaman geri çekebilirsiniz. Geri çekilme için e-posta yoluyla gayri resmi bildirim yeterlidir. Geri çekilmeye kadar yapılan veri işlemenin yasallığı, geri çekilmeden etkilenmez.",
+    "p7": "Yetkili denetim makamına şikayet hakkı",
+    "p8": "Veri öznesi olarak, veri koruma yasasının ihlali durumunda yetkili denetim makamına şikayette bulunma hakkınız vardır. Veri koruma konularında yetkili denetim makamı, şirketimizin bulunduğu federal eyaletteki Eyalet Veri Koruma Komiseri'dir. Aşağıdaki bağlantı, veri koruma görevlileri ve iletişim bilgilerinin bir listesini sağlamaktadır:",
+    "p9": "Veri taşınabilirliği hakkı",
+    "p10": "İzniniz temelinde veya bir sözleşmeyi yerine getirmek için otomatik olarak işlediğimiz verilerin size veya üçüncü bir tarafa teslim edilmesini talep etme hakkınız vardır. Veriler makine tarafından okunabilir bir formatta sağlanacaktır. Verilerin doğrudan başka bir sorumlu tarafa aktarılmasını talep ederseniz, bu sadece teknik olarak mümkün olduğu ölçüde yapılacaktır.",
+    "p11": "Bilgi, düzeltme, engelleme, silme hakkı",
+    "p12": "Geçerli yasal hükümler çerçevesinde, saklanan kişisel verileriniz, verilerin kaynağı, alıcıları ve veri işlemenin amacı hakkında herhangi bir zamanda ücretsiz bilgi alma hakkına ve, uygun olduğu hallerde, bu verileri düzeltme, engelleme veya silme hakkına sahipsiniz. Bu konuda ve kişisel verilerle ilgili daha fazla soru için, baskıda listelenen iletişim seçeneklerini kullanarak bize istediğiniz zaman ulaşabilirsiniz.",
+    "p13": "SSL veya TLS şifrelemesi",
+    "p14": "Güvenlik nedenlerinden dolayı ve bize site operatörü olarak gönderdiğiniz gizli içeriğin iletimini korumak için, web sitemiz SSL veya TLS şifrelemesi kullanmaktadır. Bu, bu web sitesi aracılığıyla gönderdiğiniz verilerin üçüncü taraflarca okunamayacağı anlamına gelir. Şifrelenmiş bağlantıyı tarayıcınızın adres satırındaki 'https://' ve tarayıcı satırındaki kilit sembolünden tanıyabilirsiniz.",
+    "p15": "Sunucu günlük dosyaları",
+    "p16": "Web sitesi sağlayıcısı, sunucu günlük dosyalarında tarayıcınızın bize otomatik olarak gönderdiği bilgileri otomatik olarak toplar ve saklar. Bu bilgiler şunlardır:",
+    "p17": "Bu veriler diğer veri kaynaklarıyla birleştirilmez. Veri işlemenin temeli, sözleşmenin yerine getirilmesi veya sözleşme öncesi tedbirlerin alınması için veri işlemeye izin veren DSGVO'nun 6. maddesinin 1. paragrafının b bendi uyarıncadır.",
+    "p18": "İletişim formu",
+    "p19": "İletişim formu aracılığıyla gönderilen veriler, sorunuzu işlemek veya daha fazla sorular için hazır bulundurmak için iletişim bilgileriniz dahil olmak üzere saklanacaktır. Bu veriler izniniz olmadan aktarılmayacaktır.",
+    "p20": "Çerezler",
+    "p21": "Web sitemiz çerezler kullanmaktadır. Bunlar, web tarayıcınız tarafından son cihazınızda saklanan küçük metin dosyalarıdır. Çerezler, teklifimizi daha kullanıcı dostu, daha etkili ve daha güvenli hale getirmemize yardımcı olur.",
+    "p22": "Google Analytics",
+    "p23": "Web sitemiz Google Analytics web analiz hizmetinin işlevlerini kullanmaktadır. Web analiz hizmetinin sağlayıcısı Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, ABD'dir.",
+    "p24": "",
+    "p25": "Ödeme Sağlayıcısı",
+    "p26": "Web sitemiz PayPal ve Sofortüberweisung üzerinden ödemeye izin vermektedir. Ödeme verileri, bu hizmet sağlayıcıları tarafından kendi gizlilik politikalarına göre işlenir.",
+    "p27": "Twitter Eklentisi",
+    "p28": "Web sitemiz Twitter hizmetinin işlevlerini kullanmaktadır. Twitter ve 'Re-Tweet' işlevini kullanırken, ziyaret ettiğiniz web sitesi Twitter hesabınıza bağlanacaktır.",
+    "l1": "Alan adımızda ziyaret edilen sayfalar",
+    "l2": "Sunucu isteğinin tarihi ve saati",
+    "l3": "Tarayıcı türü ve sürümü",
+    "l4": "Kullanılan işletim sistemi",
+    "l5": "Yönlendiren URL",
+    "l6": "Erişim yapan bilgisayarın ana bilgisayar adı",
+    "l7": "IP Adresi"
+  },
+
+  "imprint": {
+    "generalInfo": {
+      "title": "§ 5 TMG (Alman Telemedya Yasası) uyarınca sağlanan bilgiler:",
+      "authorized": "Resmi temsilci:",
+      "contact": "İletişim"
+    },
+    "discalimer": {
+      "title": "Sorumluluk reddi:",
+      "liabilityForContent": {
+        "title": "İçerik sorumluluğu",
+        "content": "Sayfalarımızın içeriği büyük bir özenle oluşturulmuştur. Ancak, içeriğin doğru, eksiksiz ve güncel olduğunu garanti edemeyiz. Hizmet sağlayıcı olarak, § 7 paragraf 1 TMG (Alman Telemedya Yasası) ve genel yasalar uyarınca bu sayfalardaki kendi içeriğimizden sorumlu olmaktayız. §§ 8 ila 10 TMG uyarınca, üçüncü taraflardan iletilen veya saklanan bilgileri izleme veya yasadışı faaliyetleri gösteren koşulları araştırma yükümlülüğümüz yoktur. Genel yasalara göre bilgilerin kaldırılması veya kullanımının engellenmesi ile ilgili yükümlülükler bundan etkilenmez. Ancak bu konudaki sorumluluk, ancak bir yasa ihlali hakkında bilgi sahibi olduğumuz andan itibaren başlar. Böyle bir yasa ihlali hakkında bilgi sahibi olursak, ilgili içeriği derhal kaldıracağız."
+      },
+      "liabilityForLinks": {
+        "title": "Bağlantılar için sorumluluk",
+        "content": "Teklifimiz, içeriğini etkileyemediğimiz üçüncü taraf harici web sitelerine bağlantılar içermektedir. Bu nedenle, bu tür harici içeriklerden sorumlu değiliz. İlgili bağlantılı sitelerin içeriğinden her zaman ilgili sağlayıcı veya operatör sorumludur. Bağlantı verme sırasında bağlantılı sayfalar olası yasa ihlalleri açısından kontrol edilmiştir. Bağlantı verme sırasında yasadışı içerik tespit edilmemiştir. Ancak, bağlantılı sayfaların içeriğinin sürekli kontrolü, yasadışı bir ihlal kanıtı olmaksızın makul değildir. İhlallerden haberdar olursak, ilgili bağlantıları derhal kaldıracağız."
+      },
+      "copyrights": {
+        "title": "Telif Hakkı",
+        "content": "Site operatörü tarafından oluşturulan bu sayfalardaki içerik ve eserler Alman telif hakkı yasasına tabidir. Telif hakkı kanununun sınırları dışındaki çoğaltma, işleme, dağıtım ve her türlü kullanım, ilgili yazarın veya yaratıcının yazılı izni gerektirir. Bu sayfaların indirilmesi ve kopyalanması yalnızca kişisel ve ticari olmayan kullanım için izin verilir. Bu sitedeki içerik operatör tarafından oluşturulmadığı sürece, üçüncü taraf telif haklarına saygı gösterilir. Özellikle, üçüncü taraf içeriği bu şekilde tanımlanır. Telif hakkı ihlali fark ettiğiniz takdirde, lütfen bizi bilgilendirin. İhlallerden haberdar olursak, ilgili içeriği derhal kaldıracağız."
+      },
+      "dataProtection": {
+        "title": "Veri koruma",
+        "content": "Web sitemizin kullanımı genellikle kişisel verilerin sağlanması olmadan mümkündür. Kişisel veriler (örneğin isim, adres veya e-posta adresi) web sitemizde toplanıyorsa, bu her zaman mümkün olduğunca gönüllülük esasına dayanmaktadır. Bu veriler, izniniz olmadan üçüncü taraflara aktarılmayacaktır. İnternet üzerinden veri iletiminin (örneğin e-posta yoluyla iletişim) güvenlik açıkları olabileceğini belirtmek isteriz. Üçüncü taraflar tarafından erişime karşı verilerin tam koruması mümkün değildir. İlan etme yükümlülüğü çerçevesinde üçüncü tarafların yayınlanan iletişim verilerini, istenmemiş reklam ve bilgi materyalleri gönderme amacıyla kullanması burada açıkça yasaklanmıştır. Sayfa operatörleri, istenmeyen bilgi gönderimi durumunda, örneğin spam e-postalar yoluyla, yasal işlem başlatma hakkını açıkça saklı tutar."
+      }
+    }
+  }
+}

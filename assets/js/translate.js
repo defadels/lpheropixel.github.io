@@ -6,11 +6,11 @@ const languages = {
   pt: { code: "pt", flag: "pt.svg", name: "Português" },
   de: { code: "de", flag: "de.svg", name: "Deutsch" },
   fr: { code: "fr", flag: "fr.svg", name: "Français" },
-  ja: { code: "ja", flag: "jp.svg", name: "日本語" },
+  jp: { code: "jp", flag: "jp.svg", name: "日本語" },
   ru: { code: "ru", flag: "ru.svg", name: "Русский" },
   tr: { code: "tr", flag: "tr.svg", name: "Türkçe" },
-  ko: { code: "ko", flag: "kr.svg", name: "한국어" },
-  tl: { code: "tl", flag: "ph.svg", name: "Filipino" },
+  kr: { code: "kr", flag: "kr.svg", name: "한국어" },
+  ph: { code: "ph", flag: "ph.svg", name: "Filipino" },
 };
 
 let currentLanguage = "en";
