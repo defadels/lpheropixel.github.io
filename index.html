@@ -259,7 +259,7 @@
                 <li>
                   <button data-lang="id" class="flex items-center px-4 py-2 hover:bg-[#333]">
                     <img src="assets/img/flags/id.svg" alt="Bahasa Indonesia" class="w-6 h-4 mr-3 rounded-sm" />
-                    <span>Bahasa Indonesia </span>
+                    <span>Indonesia</span>
                   </button>
                 </li>
                 <li>
@@ -581,6 +581,18 @@
 
     <!-- Main Js -->
     <script type="module" src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("language-toggle");
+        const dropdown = document.getElementById("language-dropdown");
+
+        toggle.addEventListener("click", (e) => {
+          e.stopImmediatePropagation(); // Tambahkan ini
+          dropdown.classList.toggle("hidden");
+        });
+      });
+    </script>
     <!-- <script src="assets/js/flag.js"></script> -->
 
     <!-- Flowbite -->

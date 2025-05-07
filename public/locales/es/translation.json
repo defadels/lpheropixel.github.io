@@ -1,0 +1,136 @@
+{
+  "home": {
+    "navbar": {
+      "index": "Inicio",
+      "about": "Sobre Nosotros",
+      "portfolio": "Portafolio",
+      "howItWorks": "Cómo Funciona",
+      "apply": "Aplicar Ahora"
+    },
+    "section": {
+      "fluid": {
+        "title": "Envía tus proyectos de Minecraft - los llevaremos al mercado.",
+        "content": "Socio oficial. Proceso sencillo. Colaboración justa.",
+        "apply": "Aplicar Ahora"
+      },
+      "about": {
+        "title": "Sobre Heropixel Games",
+        "content": "Heropixel Games es un socio oficial de Minecraft Marketplace. Hemos publicado más de 50 proyectos en todo el mundo y ayudamos a los creadores a materializar sus ideas profesionalmente.",
+        "check": {
+          "verified": "Socio Verificado",
+          "experience": "Experiencia y Calidad",
+          "fair": "Pagos Justos por Adelantado"
+        }
+      },
+      "how": {
+        "title": "Cómo Funciona",
+        "submit": {
+          "title": "1. Envío",
+          "content": "Complete el formulario y comparta su idea con nosotros."
+        },
+        "review": {
+          "title": "2. Revisión y Retroalimentación",
+          "content": "Revisamos su proyecto y le damos retroalimentación honesta."
+        },
+        "publish": {
+          "title": "3. Publicación Conjunta",
+          "content": "Le ayudaremos a publicarlo en Minecraft Marketplace, oficialmente."
+        }
+      },
+      "portfolio": {
+        "title": "Portafolio",
+        "content": "Eche un vistazo a los proyectos de Heropixel Games. Haga clic en cada imagen para obtener información sobre el proyecto.",
+        "games": {
+          "4BitCraft": {
+            "description": "¡Convierte tu Minecraft en un juego súper lindo! Todo parece pequeño: cada bloque, cada multitud, cada árbol.<br><br>+ Paquete 4x4 súper lindo<br>+ Bloques 4x4, ítems, multitudes y más<br>+ Fiel a las texturas vanilla<br>+ Paquete de recursos 1.20"
+          },
+          "MoreAllays": {
+            "description": "¡Comienza tu aventura de supervivencia en Minecraft! Muchos Allays nuevos te esperan: Allay Enderman, Allay Axolotl, Allay Warden y muchos más. ¡Libéralos de mazmorras y templos!<br><br>+ 16 Allays lindos añadidos<br>+ Mazmorras y templos Allay<br>+ 10 skins de Allay incluidos<br>+ Compatible con multijugador y un jugador"
+          },
+          "GiantTNT": {
+            "description": "¿Necesitas lo más extremo? Estos TNT no solo destruyen bases, sino pueblos enteros y grandes ciudades.<br><br>+ Más de 40 TNT gigantes diferentes<br>+ Destrucción y explosiones máximas<br>+ Tornados, meteoritos, 5000x y más TNT<br><br>++ ¡Úsalo en tu mundo!<br>++ Compatible con multijugador"
+          },
+          "ZombieBunker": {
+            "description": "¡Protege a tus amigos y a ti mismo del Apocalipsis Zombie en una base de alta seguridad! Tu búnker subterráneo tiene todo lo necesario para sobrevivir.<br><br>+ Muros de seguridad activables<br>+ Búnker secreto<br>+ Base segura<br>+ Apocalipsis zombie<br>+ Zombies personalizados<br>++ Multijugador y un jugador"
+          },
+          "MoreCreepers": {
+            "description": "¡BOOOM! Añade creepers únicos a tu proyecto de mundo o reino.<br><br>+ 10 creepers definitivos<br>+ Explosiones increíbles<br>+ Colecciona cabezas de creeper<br><br>++ ¡ÚSALO EN TU MUNDO! ++"
+          }
+        }
+      },
+      "form": {
+        "title": "Formulario de Solicitud",
+        "placeholder": {
+          "name": "Nombre/Nombre del Equipo",
+          "email": "Correo Electrónico de Contacto",
+          "description": "Descripción Breve del Proyecto"
+        },
+        "checkbox": "Acepto que mis datos sean almacenados con fines de comunicación.",
+        "button": "Enviar Proyecto"
+      }
+    }
+  },
+  "privacy": {
+    "p1": "Notas generales e información obligatoria",
+    "p2": "Designación del organismo responsable",
+    "p3": "El responsable del procesamiento de datos en este sitio web es:",
+    "p4": "El responsable decide por sí mismo o conjuntamente con otros sobre los propósitos y medios del procesamiento de datos personales (por ejemplo, nombres, datos de contacto, etc.)",
+    "p5": "Revocación de su consentimiento para el procesamiento de datos",
+    "p6": "Solo con su consentimiento se pueden realizar ciertas operaciones de procesamiento de datos. Puede revocar el consentimiento dado en cualquier momento. Una notificación informal por correo electrónico es suficiente para la revocación. La legalidad del procesamiento de datos realizado hasta la revocación no se ve afectada por la revocación.",
+    "p7": "Derecho a presentar una reclamación ante la autoridad supervisora competente",
+    "p8": "Como sujeto de datos, tiene derecho a presentar una queja ante la autoridad supervisora competente en caso de violación de la ley de protección de datos. La autoridad supervisora competente en materia de protección de datos es el Comisionado de Protección de Datos del estado federal donde se encuentra nuestra empresa. El siguiente enlace proporciona una lista de los comisionados de protección de datos y sus datos de contacto:",
+    "p9": "Derecho a la portabilidad de datos",
+    "p10": "Tiene derecho a que los datos que procesamos automáticamente en base a su consentimiento o para cumplir con un contrato, se entreguen a usted o a un tercero. Los datos se proporcionarán en un formato legible por máquina. Si solicita la transferencia directa de datos a otro responsable, esto solo se hará en la medida en que sea técnicamente posible.",
+    "p11": "Derecho a información, corrección, bloqueo, eliminación",
+    "p12": "Dentro del marco de las disposiciones legales aplicables, tiene derecho a obtener información gratuita en cualquier momento sobre sus datos personales almacenados, el origen de los datos, los destinatarios y el propósito del procesamiento de datos, y, si corresponde, el derecho a corregir, bloquear o eliminar estos datos. En este caso y también para más preguntas sobre el tema de datos personales, puede contactarnos en cualquier momento utilizando las opciones de contacto enumeradas en el aviso legal.",
+    "p13": "Cifrado SSL o TLS",
+    "p14": "Por razones de seguridad y para proteger la transmisión de contenido confidencial que nos envía como operador del sitio, nuestro sitio web utiliza cifrado SSL o TLS. Esto significa que los datos que transmite a través de este sitio web no pueden ser leídos por terceros. Puede reconocer una conexión cifrada por la línea de dirección 'https://' en su navegador y el símbolo de candado en la barra del navegador.",
+    "p15": "Archivos de registro del servidor",
+    "p16": "En los archivos de registro del servidor, el proveedor del sitio web recopila y almacena automáticamente información que su navegador nos envía automáticamente. Esta información es:",
+    "p17": "Estos datos no se combinan con otras fuentes de datos. La base para el procesamiento de datos es el Art. 6 párr. 1 lit. b DSGVO, que permite el procesamiento de datos para el cumplimiento de un contrato o medidas precontractuales.",
+    "p18": "Formularios de contacto",
+    "p19": "Los datos enviados a través de formularios de contacto se almacenarán, incluidos sus datos de contacto, para procesar su solicitud o estar disponibles para preguntas de seguimiento. Estos datos no se transmitirán sin su consentimiento.",
+    "p20": "Cookies",
+    "p21": "Nuestro sitio web utiliza cookies. Estos son pequeños archivos de texto que su navegador web almacena en su dispositivo final. Las cookies nos ayudan a hacer nuestra oferta más amigable para el usuario, efectiva y segura.",
+    "p22": "Google Analytics",
+    "p23": "Nuestro sitio web utiliza funciones del servicio de análisis web Google Analytics. El proveedor del servicio de análisis web es Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, EE. UU.",
+    "p24": "",
+    "p25": "Proveedores de pago",
+    "p26": "Nuestro sitio web permite pagos a través de PayPal y Sofortüberweisung. Los datos de pago son procesados por estos proveedores de acuerdo con sus políticas de privacidad.",
+    "p27": "Plugin de Twitter",
+    "p28": "Nuestro sitio web utiliza funciones del servicio Twitter. Al usar Twitter y la función 'Retweet', los sitios web que visite se vincularán a su cuenta de Twitter.",
+    "l1": "Páginas visitadas en nuestro dominio",
+    "l2": "Fecha y hora de la solicitud al servidor",
+    "l3": "Tipo y versión del navegador",
+    "l4": "Sistema operativo utilizado",
+    "l5": "URL de referencia",
+    "l6": "Nombre de host del ordenador que accede",
+    "l7": "Dirección IP"
+  },
+  "imprint": {
+    "generalInfo": {
+      "title": "Información proporcionada según § 5 TMG (Ley Alemana de Servicios de Telemedia):",
+      "authorized": "Representante autorizado:",
+      "contact": "Contacto"
+    },
+    "discalimer": {
+      "title": "Exención de responsabilidad:",
+      "liabilityForContent": {
+        "title": "Responsabilidad por el contenido",
+        "content": "El contenido de nuestras páginas se ha creado con el mayor cuidado. Sin embargo, no podemos garantizar que el contenido sea correcto, completo y actualizado. Como proveedor de servicios, somos responsables de nuestro propio contenido en estas páginas de acuerdo con § 7 párr. 1 TMG (Ley Alemana de Servicios de Telemedia) y las leyes generales. Según §§ 8 a 10 TMG, no estamos obligados a monitorear información transmitida o almacenada por terceros o a investigar circunstancias que indiquen actividad ilegal. Las obligaciones de eliminar o bloquear el uso de información según las leyes generales permanecen sin afectar por esto. Sin embargo, la responsabilidad en este caso solo es posible desde el momento en que tengamos conocimiento de una violación concreta. Si nos damos cuenta de tales violaciones legales, eliminaremos inmediatamente el contenido en cuestión."
+      },
+      "liabilityForLinks": {
+        "title": "Responsabilidad por enlaces",
+        "content": "Nuestra oferta contiene enlaces a sitios web externos de terceros sobre cuyo contenido no tenemos influencia. Por lo tanto, no asumimos responsabilidad por este contenido externo. El proveedor u operador de los sitios enlazados siempre es responsable del contenido de los sitios enlazados. Los sitios enlazados se verificaron en busca de posibles violaciones legales en el momento del enlace. No se identificó contenido ilegal en el momento de enlazar. Sin embargo, un control permanente del contenido de los sitios enlazados no es razonable sin evidencia concreta de una violación legal. Si nos damos cuenta de violaciones, eliminaremos dichos enlaces inmediatamente."
+      },
+      "copyrights": {
+        "title": "Derechos de autor",
+        "content": "El contenido y obras en estas páginas creadas por el operador del sitio están sujetas a la ley de derechos de autor alemana. La reproducción, edición, distribución y cualquier tipo de uso más allá de los límites de la ley de derechos de autor requieren el consentimiento por escrito del autor o creador respectivo. Las descargas y copias de estas páginas solo están permitidas para uso privado y no comercial. En la medida en que el contenido en este sitio no fue creado por el operador, se respetan los derechos de autor de terceros. En particular, el contenido de terceros se identifica como tal. Si se da cuenta de una violación de derechos de autor, le rogamos que nos lo notifique. Si nos damos cuenta de violaciones, eliminaremos dicho contenido inmediatamente."
+      },
+      "dataProtection": {
+        "title": "Protección de datos",
+        "content": "El uso de nuestro sitio web generalmente es posible sin proporcionar datos personales. En la medida en que se recopilen datos personales (por ejemplo, nombre, dirección o dirección de correo electrónico) en nuestro sitio web, esto siempre se hace, en la medida de lo posible, de forma voluntaria. Estos datos no se transmitirán a terceros sin su consentimiento. Queremos señalar que la transmisión de datos por Internet (por ejemplo, comunicación por correo electrónico) puede tener brechas de seguridad. No es posible una protección completa de los datos contra el acceso por parte de terceros. El uso de datos de contacto publicados por terceros en el marco del requisito de aviso legal para el envío de publicidad y material informativo no solicitado se prohíbe expresamente aquí. El operador del sitio se reserva expresamente el derecho a tomar medidas legales en caso de envío no solicitado de información publicitaria, como correos no deseados."
+      }
+    }
+  }
+}

@@ -354,13 +354,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("language-toggle");
-  const dropdown = document.getElementById("language-dropdown");
-
-  toggle.addEventListener("click", (e) => {
-    e.stopImmediatePropagation(); // Tambahkan ini
-    dropdown.classList.toggle("hidden");
-  });
-});

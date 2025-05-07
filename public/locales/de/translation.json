@@ -1,0 +1,136 @@
+{
+  "home": {
+    "navbar": {
+      "index": "Startseite",
+      "about": "Über Uns",
+      "portfolio": "Portfolio",
+      "howItWorks": "So Funktioniert's",
+      "apply": "Jetzt Bewerben"
+    },
+    "section": {
+      "fluid": {
+        "title": "Reichen Sie Ihre Minecraft-Projekte ein - wir bringen sie auf den Markt.",
+        "content": "Offizieller Partner. Einfacher Prozess. Faire Zusammenarbeit.",
+        "apply": "Jetzt Bewerben"
+      },
+      "about": {
+        "title": "Über Heropixel Games",
+        "content": "Heropixel Games ist ein offizieller Minecraft Marketplace-Partner. Wir haben weltweit über 50 Projekte veröffentlicht und helfen Creators, ihre Ideen professionell umzusetzen.",
+        "check": {
+          "verified": "Verifizierter Partner",
+          "experience": "Erfahrung & Qualität",
+          "fair": "Faire Vorauszahlungen"
+        }
+      },
+      "how": {
+        "title": "So Funktioniert's",
+        "submit": {
+          "title": "1. Einreichen",
+          "content": "Füllen Sie das Formular aus und teilen Sie uns Ihre Idee mit."
+        },
+        "review": {
+          "title": "2. Prüfung & Feedback",
+          "content": "Wir prüfen Ihr Projekt und geben ehrliches Feedback."
+        },
+        "publish": {
+          "title": "3. Gemeinsame Veröffentlichung",
+          "content": "Wir helfen Ihnen, es offiziell im Minecraft Marketplace zu veröffentlichen."
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "content": "Werfen Sie einen Blick auf die Projekte von Heropixel Games. Klicken Sie auf die jeweiligen Bilder, um Informationen über das Projekt zu erhalten.",
+        "games": {
+          "4BitCraft": {
+            "description": "Verwandeln Sie Ihr Minecraft in ein super süßes Spiel! Alles wirkt winzig: jeder Block, jeder Mob, jeder Baum.<br><br>+ Super süßes 4x4-Paket<br>+ 4x4-Blöcke, Items, Mobs und mehr<br>+ Treu zu Vanilla-Texturen<br>+ 1.20-Ressourcenpaket"
+          },
+          "MoreAllays": {
+            "description": "Beginnen Sie Ihr Minecraft-Überlebensabenteuer! Viele neue Allays warten auf Sie: Enderman-Allay, Axolotl-Allay, Warden-Allay und mehr!<br><br>+ 16 niedliche Allays hinzugefügt<br>+ Allay-Dungeons & Tempel<br>+ 10 Allay-Skins enthalten<br>+ Multiplayer- & Singleplayer-freundlich"
+          },
+          "GiantTNT": {
+            "description": "Brauchen Sie das Extremste? Diese TNTs zerstören nicht nur Basen, sondern ganze Dörfer und große Städte.<br><br>+ Über 40 verschiedene Riesen-TNTs<br>+ Maximale Zerstörung und Explosionen<br>+ Tornados, Meteoriten, 5000x und mehr TNT!<br><br>++ Verwenden Sie es in Ihrer Welt!<br>++ Multiplayer-freundlich!"
+          },
+          "ZombieBunker": {
+            "description": "Schützen Sie sich und Ihre Freunde vor der Zombie-Apokalypse in einem Hochsicherheitsstützpunkt!<br><br>+ Aktivierbare Sicherheitswände<br>+ Geheimer Bunker<br>+ Sichere Basis<br>+ Zombie-Apokalypse<br>+ Benutzerdefinierte Zombies<br>++ Multiplayer und Singleplayer"
+          },
+          "MoreCreepers": {
+            "description": "BOOOM! Fügen Sie einzigartige Creeper zu Ihrem Welt- oder Realm-Projekt hinzu.<br><br>+ 10 ultimative Creeper<br>+ Erstaunliche Explosionen<br>+ Sammeln Sie Creeper-Köpfe<br><br>++ VERWENDEN SIE ES IN IHRER WELT! ++"
+          }
+        }
+      },
+      "form": {
+        "title": "Bewerbungsformular",
+        "placeholder": {
+          "name": "Name/Teamname",
+          "email": "Kontakt-E-Mail",
+          "description": "Kurze Projektbeschreibung"
+        },
+        "checkbox": "Ich stimme zu, dass meine Daten zu Kommunikationszwecken gespeichert werden.",
+        "button": "Projekt einreichen"
+      }
+    }
+  },
+  "privacy": {
+    "p1": "Allgemeine Hinweise und Pflichtinformationen",
+    "p2": "Bezeichnung der verantwortlichen Stelle",
+    "p3": "Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+    "p4": "Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).",
+    "p5": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+    "p6": "Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",
+    "p7": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+    "p8": "Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit:",
+    "p9": "Recht auf Datenübertragbarkeit",
+    "p10": "Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.",
+    "p11": "Recht auf Auskunft, Berichtigung, Sperrung, Löschung",
+    "p12": "Im Rahmen der geltenden gesetzlichen Bestimmungen können Sie jederzeit unentgeltlich Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten verlangen. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.",
+    "p13": "SSL- bzw. TLS-Verschlüsselung",
+    "p14": "Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL- bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“-Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.",
+    "p15": "Server-Log-Dateien",
+    "p16": "In Server-Log-Dateien erhebt und speichert der Provider der Website automatisch Informationen, die Ihr Browser automatisch an uns übermittelt. Dies sind:",
+    "p17": "Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Datenerhebung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.",
+    "p18": "Kontaktformular",
+    "p19": "Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.",
+    "p20": "Cookies",
+    "p21": "Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.",
+    "p22": "Google Analytics",
+    "p23": "Unsere Website verwendet Funktionen des Webanalysedienstes Google Analytics. Anbieter des Webanalysedienstes ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.",
+    "p24": "",
+    "p25": "Zahlungsanbieter",
+    "p26": "Auf unserer Website bieten wir Zahlungen via PayPal und Sofortüberweisung an. Zahlungsdaten werden gemäß den Datenschutzbestimmungen der jeweiligen Anbieter verarbeitet.",
+    "p27": "Twitter-Plugin",
+    "p28": "Unsere Website nutzt Funktionen des Dienstes Twitter. Bei Nutzung von Twitter und der „Re-Tweet“-Funktion werden von Ihnen besuchte Websites mit Ihrem Twitter-Account verknüpft.",
+    "l1": "Besuchte Seiten auf unserer Domain",
+    "l2": "Datum und Uhrzeit der Serveranfrage",
+    "l3": "Browsertyp und Browserversion",
+    "l4": "Verwendetes Betriebssystem",
+    "l5": "Referrer URL",
+    "l6": "Hostname des zugreifenden Rechners",
+    "l7": "IP-Adresse"
+  },
+  "imprint": {
+    "generalInfo": {
+      "title": "Angaben gemäß § 5 TMG (Telemediengesetz):",
+      "authorized": "Vertretungsberechtigt:",
+      "contact": "Kontakt"
+    },
+    "discalimer": {
+      "title": "Haftungsausschluss:",
+      "liabilityForContent": {
+        "title": "Haftung für Inhalte",
+        "content": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+      },
+      "liabilityForLinks": {
+        "title": "Haftung für Links",
+        "content": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+      },
+      "copyrights": {
+        "title": "Urheberrecht",
+        "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      },
+      "dataProtection": {
+        "title": "Datenschutz",
+        "content": "Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+      }
+    }
+  }
+}
