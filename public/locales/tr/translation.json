@@ -14,7 +14,7 @@
         "apply": "Şimdi Başvur"
       },
       "about": {
-        "title": "Herpixel Games Hakkında",
+        "title": "Heropixel Games Hakkında",
         "content": "Heropixel Games, Minecraft Marketplace'in resmi bir ortağıdır. Dünya çapında 50'den fazla proje yayınladık ve yaratıcılara fikirlerini profesyonel olarak hayata geçirmelerine yardımcı olduk.",
         "check": {
           "verified": "Doğrulanmış Ortak",
@@ -55,6 +55,9 @@
           },
           "MoreCreepers": {
             "description": "BOOOM! Dünya veya doğa projenize daha benzersiz Creeper'lar ekleyin.<br><br>+ 10 Nihai Creeper <br>+ Olağanüstü patlamalar <br>+ Creeper kafalarını toplayın <br><br>++ KENDİ DÜNYANIZDA kullanın! ++"
+          },
+          "PastelParadise": {
+            "description": "Pastel dokuların ve renklerin huzur veren güzelliğine dalın.<br><br>+ 1.21 Tricky Trials doku güncellemesi<br>+ Her şey pastel tarzda yeniden dokulandırıldı<br>+ Yeni yaratık, hayvan ve boss modelleri<br>+ Doku blok varyasyonları<br>+ Animasyonlu cevherler<br>+ Detaylara özen<br><br>++ Bu doku paketini dünyanızda kullanın!"
           }
         }
       },

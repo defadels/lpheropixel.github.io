@@ -52,7 +52,7 @@ const portfolioItems = [
       "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_7.jpg",
     ],
     description:
-      "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree.<br><br>+ Super cute 4x4 pack<br>+ 4x4 blocks, items, mobs and more<br>+ Faithful to vanilla textures<br>+ 1.20 Resource Pack",
+      "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree. <br><br>+ Super cute 4x4 pack<br>+ 4x4 blocks, items, mobs and more<br>+ Faithful to vanilla textures<br>+ 1.20 Resource Pack",
     builders: "affe481 - koin1 - BigKingHD - Chonike - FlyingZera - hackerpotter - M1ller_ - sebsy - VyseHD - WoIstMeineSocke - Youseles",
   },
   {
@@ -200,6 +200,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         initSlider();
+        
+        // Pastikan elemen dengan data-i18n yang baru dibuat menyimpan innerHTML ke data-default-text
+        modalContent.querySelectorAll("[data-i18n]").forEach((el) => {
+          el.dataset.defaultText = el.innerHTML;
+        });
+        
+        // Terapkan terjemahan setelah menyimpan default text
         setTimeout(() => {
           applyTranslations(currentLanguage);
         }, 0); // Gunakan setTimeout untuk memastikan render selesai

@@ -42,7 +42,7 @@
         "content": "Confira os projetos da Heropixel Games. Clique em cada imagem para obter informações sobre o projeto.",
         "games": {
           "4BitCraft": {
-            "description": "Transforme seu Minecraft em um jogo super fofo! Tudo parece minúsculo: cada bloco, cada multidão, cada árvore.<br><br>+ Pacote 4x4 super fofo<br>+ Blocos 4x4, itens, multidões e mais<br>+ Fiel às texturas vanilla<br>+ Pacote de recursos 1.20"
+            "description": "Transforme seu Minecraft em um jogo super fofo! Tudo parece minúsculo: cada bloco, cada criatura, cada árvore.<br><br>+ Pacote 4x4 super fofo<br>+ Blocos 4x4, itens, multidões e mais<br>+ Fiel às texturas vanilla<br>+ Pacote de recursos 1.20"
           },
           "MoreAllays": {
             "description": "Comece sua aventura de sobrevivência no Minecraft! Muitos Allays novos esperam por você: Allay Enderman, Allay Axolotl, Allay Warden e muito mais! Liberte-os de masmorras e templos.<br><br>+ 16 Allays fofos adicionados<br>+ Masmorras e templos Allay<br>+ 10 skins de Allay incluídos<br>+ Compatível com multiplayer e singleplayer"
@@ -54,7 +54,10 @@
             "description": "Proteja seus amigos e a si mesmo do Apocalipse Zumbi em uma base de alta segurança! Seu bunker subterrâneo tem tudo que você precisa para sobreviver.<br><br>+ Paredes de segurança ativáveis<br>+ Bunker secreto<br>+ Base segura<br>+ Apocalipse zumbi<br>+ Zumbis personalizados<br>++ Multiplayer e singleplayer"
           },
           "MoreCreepers": {
-            "description": "BOOOM! Adicione creepers únicos ao seu projeto de mundo ou reino.<br><br>+ 10 creepers definitivos<br>+ Explosões incríveis<br>+ Colecione cabeças de creeper<br><br>++ USE NO SEU MUNDO! ++"
+            "description": "BOOOM! Adicione creepers únicos ao seu mundo ou realms.<br><br>+ 10 creepers definitivos<br>+ Explosões incríveis<br>+ Colecione cabeças de creeper<br><br>++ USE NO SEU MUNDO! ++"
+          },
+          "PastelParadise": {
+            "description": "Mergulhe na beleza suave de texturas e cores pastel.<br><br>+ Atualização de texturas 1.21 Tricky Trials<br>+ Tudo retexturizado em estilo pastel<br>+ Novos modelos de mobs, animais e chefes<br>+ Variações de blocos de textura<br>+ Minérios animados<br>+ Atenção aos detalhes<br><br>++ Use este pacote de texturas no seu mundo!"
           }
         }
       },

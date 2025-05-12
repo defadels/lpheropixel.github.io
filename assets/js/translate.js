@@ -38,27 +38,20 @@ function applyTranslations(lang) {
 
     // Jika bahasa Inggris, kembalikan ke teks default dari HTML
     if (languages[lang]?.isDefault) {
-      // el.textContent = el.dataset.defaultText || el.textContent;
-      el.innerHTML = el.dataset.defaultText || el.textContent;
+      el.innerHTML = el.dataset.defaultText || el.innerHTML;
       return;
     }
     // Jika bahasa lain, gunakan terjemahan
     else if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
-
-    // Support dot notation (e.g., "privacy.p1")
-    const value = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]);
-    if (value) {
-      el.innerHTML = value;
-    }
-
-    if (value) {
-      // Terjemahkan konten biasa atau placeholder
-      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-        el.placeholder = value; // Terapkan ke placeholder
-      } else {
-        el.innerHTML = value; // Terapkan ke konten HTML
+      // Support dot notation (e.g., "privacy.p1")
+      const value = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]);
+      if (value) {
+        // Terjemahkan konten biasa atau placeholder
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          el.placeholder = value; // Terapkan ke placeholder
+        } else {
+          el.innerHTML = value; // Terapkan ke konten HTML
+        }
       }
     }
   });
@@ -100,9 +93,10 @@ export function setLanguage(lang) {
 
 // Inisialisasi
 document.addEventListener("DOMContentLoaded", () => {
-  // Simpan teks default ke atribut data-default-text
+  // Simpan teks default ke atribut data-default-text menggunakan innerHTML (bukan textContent)
+  // agar tag HTML seperti <br> tetap dipertahankan
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    el.dataset.defaultText = el.textContent;
+    el.dataset.defaultText = el.innerHTML;
   });
 
   // Set bahasa awal

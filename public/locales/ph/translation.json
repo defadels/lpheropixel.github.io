@@ -14,7 +14,7 @@
         "apply": "Mag-apply Ngayon"
       },
       "about": {
-        "title": "Tungkol sa Herpixel Games",
+        "title": "Tungkol sa Heropixel Games",
         "content": "Ang Heropixel Games ay isang opisyal na kasosyo ng Minecraft Marketplace. Nakapag-publish na kami ng higit sa 50 proyekto sa buong mundo at tumutulong sa mga creator na isagawa ang kanilang mga ideya sa propesyonal na paraan.",
         "check": {
           "verified": "Beripikadong Kasosyo",
@@ -55,6 +55,9 @@
           },
           "MoreCreepers": {
             "description": "BOOOM! Magdagdag ng mas maraming natatanging Creepers sa iyong world o nature project.<br><br>+ 10 Ultimate Creepers <br>+ Kahanga-hangang mga pagsabog <br>+ Kolektahin ang mga creeper head <br><br>++ Gamitin sa IYONG MUNDO! ++"
+          },
+          "PastelParadise": {
+            "description": "Malubog ka sa nakakakalma na kagandahan ng mga pastel na texture at kulay.<br><br>+ 1.21 Tricky Trials texture update<br>+ Lahat ay muling na-texture sa pastel na istilo<br>+ Bagong mga modelo ng mob, hayop at boss<br>+ Mga pagkakaiba-iba ng texture block<br>+ Mga animated na ore<br>+ Pansin sa detalye<br><br>++ Gamitin ang texture pack na ito sa iyong mundo!"
           }
         }
       },

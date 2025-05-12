@@ -14,7 +14,7 @@
         "apply": "지금 신청하기"
       },
       "about": {
-        "title": "Herpixel Games 소개",
+        "title": "Heropixel Games 소개",
         "content": "Heropixel Games는 Minecraft Marketplace의 공식 파트너입니다. 우리는 전 세계적으로 50개 이상의 프로젝트를 출판했으며 크리에이터들이 그들의 아이디어를 전문적으로 실현할 수 있도록 도와왔습니다.",
         "check": {
           "verified": "인증된 파트너",
@@ -55,6 +55,9 @@
           },
           "MoreCreepers": {
             "description": "펑! 당신의 월드 또는 자연 프로젝트에 더 많은 독특한 크리퍼를 추가하세요.<br><br>+ 10개의 궁극적인 크리퍼 <br>+ 놀라운 폭발 <br>+ 크리퍼 머리 수집 <br><br>++ 당신의 월드에서 사용하세요! ++"
+          },
+          "PastelParadise": {
+            "description": "파스텔 텍스처와 색상의 부드러운 아름다움에 빠져보세요.<br><br>+ 1.21 Tricky Trials 텍스처 업데이트<br>+ 모든 것이 파스텔 스타일로 재질감화<br>+ 새로운 몹, 동물, 보스 모델<br>+ 텍스처 블록 변형<br>+ 애니메이션 광석<br>+ 세부 사항에 대한 관심<br><br>++ 이 텍스처 팩을 당신의 세계에서 사용해보세요!"
           }
         }
       },

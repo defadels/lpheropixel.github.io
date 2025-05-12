@@ -14,7 +14,7 @@
         "apply": "Daftar Sekarang"
       },
       "about": {
-        "title": "Tentang Herpixel Games",
+        "title": "Tentang Heropixel Games",
         "content": "Heropixel Games adalah mitra resmi Minecraft Marketplace. Kami telah menerbitkan lebih dari 50 proyek di seluruh dunia dan membantu para kreator mewujudkan ide mereka secara profesional.",
         "check": {
           "verified": "Mitra Terverifikasi",
@@ -55,6 +55,9 @@
           },
           "MoreCreepers": {
             "description": "BOOOM! Tambahkan lebih banyak Creepers unik ke proyek dunia atau alam Anda.<br><br>+ 10 Creeper pamungkas <br>+ Ledakan luar biasa <br>+ Kumpulkan kepala creeper <br><br>++ Gunakan di DUNIA ANDA! ++"
+          },
+          "PastelParadise": {
+            "description": "Nikmati keindahan menenangkan dari tekstur dan warna pastel.<br><br>+ Pembaruan tekstur 1.21 Tricky Trials<br>+ Semua ditekstur ulang dalam gaya pastel<br>+ Model baru untuk mob, hewan, dan bos<br>+ Variasi blok tekstur<br>+ Bijih yang beranimasi<br>+ Perhatian pada detail<br><br>++ Gunakan paket tekstur ini di dunia Anda!"
           }
         }
       },
@@ -99,7 +102,7 @@
     "p25": "Penyedia Pembayaran",
     "p26": "Situs web kami memungkinkan pembayaran melalui PayPal dan Sofortüberweisung. Data pembayaran diproses oleh penyedia layanan ini sesuai dengan kebijakan privasi mereka.",
     "p27": "Plugin Twitter",
-    "p28": "Situs web kami menggunakan fungsi-fungsi layanan Twitter. Saat menggunakan Twitter dan fungsi “Re-Tweet”, situs web yang Anda kunjungi akan ditautkan ke akun Twitter Anda.",
+    "p28": "Situs web kami menggunakan fungsi-fungsi layanan Twitter. Saat menggunakan Twitter dan fungsi "Re-Tweet", situs web yang Anda kunjungi akan ditautkan ke akun Twitter Anda.",
     "l1": "Halaman yang dikunjungi di domain kami",
     "l2": "Tanggal dan waktu permintaan server",
     "l3": "Jenis dan versi browser",
