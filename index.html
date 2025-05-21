@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heropixel Games | Home</title>
     <link href="./output.css" rel="stylesheet" />
 
     <!-- Remixicon -->
@@ -139,42 +140,6 @@
           e-res;
       }
 
-      /* Pindahkan header Google Translate ke bawah navbar */
-      .goog-te-banner-frame {
-        position: fixed;
-        top: 80px !important; /* Sesuaikan dengan tinggi navbar Anda */
-        left: 0;
-        z-index: 999; /* Pastikan di bawah navbar (z-index navbar biasanya 1000+) */
-        width: 100%;
-        margin-top: 0;
-      }
-      /* SEMBUNYIKAN HEADER GOOGLE TRANSLATE YANG MUNCUL DI ATAS */
-      .goog-te-banner-frame.skiptranslate {
-        display: none !important;
-      }
-
-      /* SEMBUNYIKAN FOOTER WIDGET & LOGO */
-      .goog-logo-link,
-      .goog-te-gadget span {
-        display: none !important;
-      }
-
-      /* HAPUS RUANG TAMBAHAN DARI GOOGLE */
-      .goog-te-banner-frame {
-        height: 0 !important;
-        visibility: hidden !important;
-      }
-
-      #goog-gt-tt,
-      .goog-te-balloon-frame {
-        display: none !important;
-      }
-
-      .goog-text-highlight {
-        background: none !important;
-        box-shadow: none !important;
-      }
-
       /* Animasi dropdown */
 
       #language-dropdown {
@@ -216,7 +181,7 @@
 
       @keyframes fadeIn {
         from {
-          opacity: 0;
+          opacity: 1;
           transform: translateY(-10px);
         }
         to {
@@ -333,7 +298,7 @@
             <li>
               <a href="index.html#formApp" class="nav-link">
                 <div class="relative inline-block">
-                  <div class="absolute inset-0 translate-x-2 translate-y-2 blur-[200px] bg-[#ff6100] opacity-60 rounded-md z-0"></div>
+                  <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-xl bg-[#ff6100] opacity-60 rounded-md z-0"></div>
 
                   <span data-i18n="home.navbar.apply" class="bg-[#ff6100] hover:bg-[#d44500] px-12 py-4 apply-button text-[20px] duration-300 lg:py-3 lg:px-7 lg:text-base relative z-10"> Apply Now </span>
                 </div>
@@ -363,9 +328,9 @@
           <p data-i18n="home.section.fluid.content" data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-[10px] font- lg:text-2xl">Official partner. Simple process. Fair collaboration.</p>
           <a href="index.html#formApp" class="nav-link my-8">
             <div class="relative inline-block">
-              <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-[200px] bg-[#ff6100] opacity-60 rounded-md z-0"></div>
+              <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-md bg-[#ff6100] opacity-60 rounded-md z-0"></div>
 
-              <span data-i18n="home.section.fluid.apply" class="bg-[#ff6100] font-Pixelify px-6 py-2 md:px-12 apply-button text-base shadow-custom duration-300 md:py-4 font-extralight md:text-xl hover:bg-[#d44500]"> Apply Now </span>
+              <span data-i18n="home.section.fluid.apply" class="bg-[#ff6100] hover:bg-[#d44500] font-Pixelify px-6 py-2 md:px-12 apply-button text-base shadow-custom duration-300 md:py-4 font-extralight md:text-xl"> Apply Now </span>
             </div>
           </a>
         </div>
@@ -522,6 +487,7 @@
                   <textarea
                     data-i18n="home.section.form.placeholder.description"
                     name="description"
+                    value=""
                     id="description"
                     class="bg-[#282828] placeholder-[#A5A5A5] text-slate-100 text-sm rounded-lg focus:ring-[#282828] focus:border-[#282828] block w-full px-2.5 py-2 min-h-[200px]"
                     placeholder="Short Project Description"
@@ -583,14 +549,38 @@
     <script type="module" src="assets/js/main.js"></script>
 
     <script>
+      // -------------- Scroll Navbar --------------
+      const scrollHeader = () => {
+        const header = document.getElementById("navbar");
+
+        if (this.scrollY >= 50) {
+          header.classList.add("bg-black", "bg-opacity-80");
+        } else {
+          header.classList.remove("bg-black", "bg-opacity-80");
+        }
+      };
+
+      window.addEventListener("scroll", scrollHeader);
+    </script>
+
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
         const toggle = document.getElementById("language-toggle");
         const dropdown = document.getElementById("language-dropdown");
 
         toggle.addEventListener("click", (e) => {
           e.stopImmediatePropagation(); // Tambahkan ini
+          e.stopPropagation();
           dropdown.classList.toggle("hidden");
         });
+
+          // Event listener untuk menutup dropdown ketika klik di luar
+          document.addEventListener("click", (e) => {
+          if (!dropdown.contains(e.target) && !toggle.contains(e.target)) {
+            dropdown.classList.add("hidden");
+          }
+        });
+
       });
     </script>
     <!-- <script src="assets/js/flag.js"></script> -->

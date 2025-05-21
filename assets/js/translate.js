@@ -38,27 +38,27 @@ function applyTranslations(lang) {
 
     // Jika bahasa Inggris, kembalikan ke teks default dari HTML
     if (languages[lang]?.isDefault) {
-      // el.textContent = el.dataset.defaultText || el.textContent;
-      el.innerHTML = el.dataset.defaultText || el.textContent;
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        // Untuk input dan textarea, hanya ubah placeholder
+        el.placeholder = el.dataset.defaultText || el.placeholder;
+      } else {
+        // Untuk elemen lain, ubah innerHTML
+        el.innerHTML = el.dataset.defaultText || el.innerHTML;
+      }
       return;
-    }
-    // Jika bahasa lain, gunakan terjemahan
-    else if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
     }
 
     // Support dot notation (e.g., "privacy.p1")
     const value = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]);
-    if (value) {
-      el.innerHTML = value;
-    }
-
+    
     if (value) {
       // Terjemahkan konten biasa atau placeholder
       if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-        el.placeholder = value; // Terapkan ke placeholder
+        // Untuk input dan textarea, hanya ubah placeholder
+        el.placeholder = value;
       } else {
-        el.innerHTML = value; // Terapkan ke konten HTML
+        // Untuk elemen lain, ubah innerHTML
+        el.innerHTML = value;
       }
     }
   });

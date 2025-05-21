@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
 
+    <title>Heropixel Games | Privacy</title>
+
     <!-- Remixicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
 
@@ -322,6 +324,42 @@
 
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      // -------------- Scroll Navbar --------------
+      const scrollHeader = () => {
+        const header = document.getElementById("navbar");
+
+        if (this.scrollY >= 50) {
+          header.classList.add("bg-black", "bg-opacity-80");
+        } else {
+          header.classList.remove("bg-black", "bg-opacity-80");
+        }
+      };
+
+      window.addEventListener("scroll", scrollHeader);
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("language-toggle");
+        const dropdown = document.getElementById("language-dropdown");
+
+        toggle.addEventListener("click", (e) => {
+          e.stopImmediatePropagation(); // Tambahkan ini
+          e.stopPropagation();
+          dropdown.classList.toggle("hidden");
+        });
+
+          // Event listener untuk menutup dropdown ketika klik di luar
+          document.addEventListener("click", (e) => {
+          if (!dropdown.contains(e.target) && !toggle.contains(e.target)) {
+            dropdown.classList.add("hidden");
+          }
+        });
+
+      });
+    </script>
 
     <!-- Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
